@@ -1,0 +1,74 @@
+{
+  "name": "my-11ty-starter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production run-s lint clean build:parcel hash build:eleventy",
+    "build:eleventy": "eleventy",
+    "build:parcel": "parcel build --no-source-maps",
+    "clean": "rimraf 'dist/assets/!(img)' 'dist/!(assets)' 'src/_includes/critical-css'",
+    "clean:deep": "rimraf dist",
+    "debug": "cross-env DEBUG=Eleventy* yarn build",
+    "debug:img": "cross-env DEBUG=EleventyImg yarn build",
+    "dev": "cross-env NODE_ENV=development run-s hash watch",
+    "hash": "node ./11ty/scripts/hash/index.js",
+    "lint": "eslint ./",
+    "start": "yarn dev",
+    "watch": "run-p -c watch:*",
+    "watch:bs": "browser-sync start --config .bsconfig.js",
+    "watch:eleventy": "eleventy --watch",
+    "watch:parcel": "parcel watch"
+  },
+  "dependencies": {
+    "photoswipe": "^5.3.2",
+    "plyr": "^3.7.2",
+    "stripe": "^10.7.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-fetch": "^3.0.0",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@babel/core": "^7.18.9",
+    "@parcel/transformer-sass": "^2.6.2",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "browser-sync": "^2.27.10",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1",
+    "eleventy-plugin-broken-links": "^2.0.3",
+    "eleventy-plugin-gen-favicons": "^1.1.0",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "html-minifier": "^4.0.0",
+    "js-yaml": "^4.1.0",
+    "md5": "^2.3.0",
+    "netlify-plugin-11ty": "^1.1.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.6.2",
+    "path-browserify": "^1.0.1",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "terser": "^5.14.2",
+    "toml": "^3.0.0"
+  },
+  "browserslist": "defaults",
+  "targets": {
+    "css": {
+      "source": [
+        "./src/css/index.scss"
+      ],
+      "distDir": "./dist/assets/css"
+    },
+    "js": {
+      "source": [
+        "./src/js/index.js",
+        "./src/js/music.js",
+        "./src/js/product.js",
+        "./src/js/shop.js",
+        "./src/js/cart.js",
+        "./src/js/contact.js"
+      ],
+      "distDir": "./dist/assets/js"
+    }
+  }
+}

@@ -1,0 +1,279 @@
+heading = "Audio  tracks."
+id      = "audio"
+
+
+
+[[ tracks ]]
+composer = "Bach, J.S."
+title    = "Organ Sonata No. 1 in E-flat, mvt. 1"
+tags     = [ "bubbly", "effervescent" ]
+catalog  = "BWV 525"
+date     = "12/2014"
+location = "St. Peters by-the-sea, Bay Shore, NY"
+src      = "https://dl.dropboxusercontent.com/s/ll09cc9milcqm3l/bach_sonata1_mvt1.mp3?dl=0"
+id       = "68684867"
+notes    = """
+Bach's 6 Organ Sonatas are often regarded as a encyclopedia of trio playing 
+for the organist, and many have commented that mastering them is a sure-fire 
+way to a solid organ technique. They are indeed deceptively difficult, and one 
+of my organ teachers once commented that they would never perform such 
+trecherous pieces in public!
+
+This opening movement is delightfully bubbly, moving seemingly without a care 
+in the world — while the organist mentally holds on for dear life!
+"""
+
+
+
+[[ tracks ]]
+composer = "Bach, J.S."
+title    = "Organ Soanta No. 1 in E-flat, mvt. 2"
+tags     = [ "introspective" ]
+catalog  = "BWV 525"
+date     = "12/2014"
+location = "St. Peters by-the-sea, Bay Shore, NY"
+src      = "https://dl.dropboxusercontent.com/s/1rqcs2up7dxb235/bach_sonata1_mvt2.mp3?dl=0"
+id       = "2c471d19"
+notes    = """
+The beautiful second movement has an introspective quality to it. Because Bach 
+gives no indication for registration beyond the assumption that you'll use two 
+manuals, the organist is free to choose the colors of the solo voices. For 
+this recording, I decided to keep it simple, and choose a flute and a 
+quintadena — the quint giving that lovely fifth overtone color to the second 
+voice.
+"""
+
+
+
+[[ tracks ]]
+composer = "Bach, J.S."
+title    = "Organ Soanta No. 1 in E-flat, mvt. 3"
+tags     = [ "lively", "cheerful" ]
+catalog  = "BWV 525"
+date     = "12/2014"
+location = "St. Peters by-the-sea, Bay Shore, NY"
+src      = "https://dl.dropboxusercontent.com/s/lm0dmcbtxg89nqq/bach_sonata1_mvt3.mp3?dl=0"
+id       = "36b80dd1"
+notes    = """
+We return to the lively and cheerful mood of the first movement. Hopefully by 
+now you can hear that in most of these trio movements, the two voices mimic 
+each other. This is particularly noticeable with this movement's theme.
+"""
+
+
+
+[[ tracks ]]
+composer = "Howells, Herbert"
+title    = "Psalm Prelude, Set 1 No. 3 (Ps. 23)"
+tags     = [ "searching", "powerful" ]
+catalog  = ""
+date     = "03/09/2016"
+location = "Woolsey Hall at Yale, New Haven, CT"
+src      = "https://dl.dropboxusercontent.com/s/fqv3irn4n7i7cys/howells_psalm-prelude-ps-23.mp3?dl=0"
+id       = "5d850d73"
+live     = true
+notes    = """
+Howells is mostly known for his delicious sacred choral works, especially the 
+canticles (Magnificat & Nunc dimittis), but he penned a great number of 
+orchestral, keyboard, and chamber works. Some of his most beloved organ works 
+are the two sets of three “Psalm Preludes”, which are all based on a line from 
+a psalm. 
+
+Howells was never the same after his son, Michael's death in 1935. While this 
+first set of psalm preludes predates that tragedy by almost 20 years, one can 
+hear a foreshadowing of that melancholy atmosphere that pervades much of his 
+later output in this piece. The repeated-note figure of the opening really does 
+give us the impression of one walking “through the valley of the shadow of 
+death”.
+"""
+
+
+
+[[ tracks ]]
+composer = "Liszt, Franz"
+title    = "Fantasy & Fugue on B-A-C-H"
+tags     = [ "virtuosic", "colorful" ]
+catalog  = ""
+date     = "03/09/2016"
+location = "Woolsey Hall at Yale, New Haven, CT"
+src      = "https://dl.dropboxusercontent.com/s/6713hn1kc82n9a3/liszt_fantasy-fugue-bach.mp3?dl=0"
+id       = "a3ae3e0f"
+live     = true
+notes    = """
+Unlike his vast body of piano music, Liszt's output for organ isn't very 
+extensive. This piece is one of my favorite recital pieces, though, as it 
+provides opportunity to really show off an organ's capabilities. Liszt gives 
+little to now registration indications, which I take as an opportunity to be 
+really creative. 
+
+Bach's name has long been used as a musical motiv, with the letters B-A-C-H 
+equating to the notes B♭-A-C-B♮ when using the German alphabet. The first four 
+notes in the opening pedal solo spell out this motiv, which is heard throughout 
+this rhapsodic showpiece.
+"""
+
+
+
+[[ tracks ]]
+composer = "Messiaen, Olivier"
+title    = "Transports de joie (‘Outburts of joy’) from L'Ascension"
+tags     = [ "ecstatic", "rhapsodic", "jagged" ]
+catalog  = ""
+date     = "12/2014"
+location = "St. Peter's by-the-sea, Bay Shore, NY"
+src      = "https://dl.dropboxusercontent.com/s/wly4s3w78u6ijdh/messiaen_transports-de-joie.mp3?dl=0"
+id       = "7dc345b8"
+notes    = """
+Messiaen was a devout Catholic, and many of his organ works have overtly and 
+deeply religious connections. This exciting piece is from Messiaen's suite, 
+*The Ascension*, which contains four depictions of Christ's ascension into 
+heaven. Originally for orchestra, Messiaen also arranged the suite for organ, 
+but decided to write a new third movement for the organ version — this being 
+that new movement. It has since become a staple in the organ virtuoso's 
+repertoire.
+
+One can definitely hear the “outbursts” from the very opening. The piece 
+certainly tests the organist's manual technique, and culminates in a dizzying 
+cascade of notes that closes the movement.
+"""
+
+
+
+[[ tracks ]]
+composer = "Rachmaninov, Sergei"
+title    = "Piano Sonata No. 2 in B-flat minor (1931)"
+tags     = [ "virtuosic", "lyrical", "broody" ]
+catalog  = ""
+date     = "11/10/2009"
+location = "Baxter Concert Hall, Cape Town, South Africa"
+src      = "https://dl.dropboxusercontent.com/s/aeyiudt5zc3xctk/rachmaninov_sonata-no2.mp3?dl=0"
+id       = "4136c3f2"
+live     = true
+notes    = """
+Rachmaninov penned a second piano sonata in 1913, but was ultimately unhappy 
+with it, prompting him to rework it in 1931. He argued that if Chopin could 
+say what he needed to say in 20 minutes with his sonata in the same key, he 
+should be able to as well. He ended up trimming the piece down, resulting in 
+what many would call a tighter, less verbose version.
+
+This sonata has long been a recital and competition warhorse for the pianist, 
+and it's easy to see why. The piece takes you through the full spectrum of 
+shades from dark to light. The melancholy descending theme heard at the 
+opening permeates the entire piece; hardly a measure goes by without a hint of 
+it.
+
+00:00 — I. Allegro agitato
+08:30 — II. Non allegro—Lento
+14:46 — III. Allegro molto
+"""
+
+
+
+[[ tracks ]]
+composer = "Rautavaara, Einojuhani"
+title    = "Toccata (1971)"
+tags     = [ "massive", "kaleidoscopic" ]
+catalog  = ""
+date     = "12/07/2016"
+location = "Dwight Chapel at Yale, New Haven, CT"
+src      = "https://dl.dropboxusercontent.com/s/gbaer8yw9ejoyek/rautavaara-toccata.mp3?dl=0"
+id       = "334d9e89"
+live     = true
+notes    = """
+Rautavaara is not a well-known composer in the west, but he has garned much 
+acclaim, especially for his wonderful choral works. You can hear his fondness 
+for cluster chords in this toccata. The version I play is the earlier version; 
+Rautavaara having cut the piece down a little and thinning the texture in some 
+places. It's not often that I choose to play an original version of a piece if 
+a composer has reworked it, but I really do feel the earlier version is more 
+effective.
+"""
+
+
+
+[[ tracks ]]
+composer = "Vierne"
+title    = "Symphony No. 1, ‘Finale’"
+tags     = [ "triumphant", "bright" ]
+catalog  = ""
+date     = "12/2014"
+location = "St. Peter's by-the-sea, Bay Shore, NY"
+src      = "https://dl.dropboxusercontent.com/s/gcqv1tcqkmt3ues/vierne_symphony1_finale.mp3?dl=0"
+id       = "47f6ab83"
+notes    = """
+Vierne is a towering figure in the French organ school, and with this finale 
+from the first organ symphony, it's easy to see why his music has been popular 
+with audiences, too. The earlier works are certainly more conservative 
+harmonically, this symphony being an example of that.
+
+The finale is undoubtedly one of the most popular pieces in the organ  
+repertoire, and I've used it on several recital programs and often as a festive 
+postlude. It is a thrilling piece to play and listen to.
+"""
+
+
+
+[[ tracks ]]
+composer = "Vierne, Louis"
+title    = "Symphony No. 2, ‘Allegro’"
+tags     = [ "symphonic", "bold" ]
+catalog  = ""
+date     = "03/09/2016"
+location = "Woolsey Hall at Yale, New Haven, CT"
+src      = "https://dl.dropboxusercontent.com/s/z0f4gzaqnd889og/vierne_symphony2_allegro.mp3?dl=0"
+id       = "ba780300"
+live     = true
+notes    = """
+While both are in a minor key, the second symphony feels darker than the first. 
+The opening movement of the second grabs you from the beginning, however, and 
+we can hear a lot of the sliding chromaticism that will characterize much of 
+his compositional output.
+"""
+
+
+
+[[ tracks ]]
+composer = "Vierne, Louis"
+title    = "Clair de Lune"
+tags     = [ "lyrical", "reflective" ]
+catalog  = "Op. 53 No. 5"
+date     = "11/11/2018"
+location = "Edenton Street United Methodist Church, Raleigh, NC"
+src      = "https://dl.dropboxusercontent.com/s/d34xbarpag22tv4/vierne_clair-de-lune.mp3?dl=0"
+id       = "884af8da"
+live     = true
+notes    = """
+There have been several artistic works inspired by the Paul Verlaine poem 
+entitled, “Clair de Lune” *(“Moonlight”)*. The most famous musical work in this 
+category is obviously the piano work by Claude Debussy, but there is also a 
+song by Fauré and this organ setting by Vierne. 
+
+Interestingly enough, all the pieces share a key signature: the Debussy and 
+Vierne are in D♭ major, and the Fauré is in the related B♭ minor. The Vierrne 
+comes 20 years after the Debussy, and it has a markedly different atmosphere; 
+the Debussy seems brighter somehow, while the Vierne has a more ethereal, 
+timeless quality, owing to the static accompaniment and long, sliding melodies. 
+"""
+
+
+
+[[ tracks ]]
+composer = "Willan, Healey"
+title    = "Introduction, Passacaglia and Fugue"
+tags     = [ "orchestral", "dark", "heroic" ]
+catalog  = ""
+date     = "11/11/2018"
+location = "Edenton Street United Methodist Church, Raleigh, NC"
+src      = "https://dl.dropboxusercontent.com/s/i4j2h80ylbx1bhx/willan_introduction-passacaglia-fugue.mp3?dl=0"
+id       = "9a990d94"
+live     = true
+notes    = """
+The sprawling Introduction, Passacaglia and Fugue of Willan has long been a 
+crowning jewel in the organ repertoire. It is a fantastic piece to showcase 
+both organ and organist; it's dense texture and variations allow ample 
+opportunity to explore the full tonal resources of the organ.
+
+According to the composer, he composed each of the passacaglia variations 
+while commuting on a trolley car from downtown Toronto to Lake Simcoe, where 
+he had been vacationing for the summer in 1916.
+"""

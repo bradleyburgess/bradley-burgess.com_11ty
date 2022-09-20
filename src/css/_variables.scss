@@ -1,0 +1,101 @@
+@use "sass:math" as math;
+
+/*
+ * ==============================================
+ *  Breakpoints
+ * ==============================================
+ */
+
+// 640px, 1024px, 1400px
+$breakpoints-up: (
+  "small": "23.75em",
+  "medium": "40em",
+  "large": "64em",
+  "xlarge": "87.5em",
+);
+
+// 639px, 1023px, 1399px
+$breakpoints-down: (
+  "xsmall": "23.6875em",
+  "small": "39.9375em",
+  "medium": "63.9375em",
+  "large": "87.4375em",
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+/*
+ * ==============================================
+ *  My Mixins
+ * ==============================================
+ */
+
+@mixin separator($top: 50%, $max-width: 100%) {
+  &::before {
+    $width: min(100%, $max-width);
+    content: "";
+    position: absolute;
+    left: calc(50% - ($width * 0.5));
+    top: $top;
+    width: $width;
+    height: var(--separator-height, 0.125rem);
+    background: linear-gradient(to right, $clr-bg 0%, $clr-white 50%, $clr-bg 100%);
+  }
+}
+
+@function toRem($px) {
+  @return #{math.div($px, 16)}rem;
+}
+
+// These values should be in px without the "px"
+@function fluid-size($minsize, $maxsize, $minwidth, $maxwidth) {
+  @return clamp(
+    #{toRem($minsize)},
+    calc(
+      #{toRem($minsize)} + ((100vw - #{toRem($minwidth)}) * #{math.div(
+              $maxsize,
+              ($maxwidth - $minwidth)
+            )})
+    ),
+    #{toRem($maxsize)}
+  );
+}
+
+/*
+ * ==============================================
+ *  Fonts
+ * ==============================================
+ */
+
+$ff-body: "Open Sans", sans-serif;
+$ff-alternate: "Source Sans 3", sans-serif;
+
+/*
+ * ==============================================
+ *  Colors
+ * ==============================================
+ */
+
+$clr-neutral-100: #141414;
+$clr-neutral-200: #1e1e1e;
+$clr-neutral-300: #212121;
+$clr-neutral-400: #3d3d3d;
+$clr-neutral-700: #939393;
+$clr-neutral-800: #c9c9c9;
+
+$clr-white: #ffffff;
+$clr-offwhite: #eaeaea;
+
+$clr-bg: $clr-neutral-100;
+$clr-fg: $clr-white;
+$clr-fg-muted: $clr-offwhite;

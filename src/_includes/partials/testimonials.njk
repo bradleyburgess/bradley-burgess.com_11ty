@@ -1,0 +1,28 @@
+{% if currentTestimonials.length %}
+<div class="testimonials">
+    <ul role="list" class="testimonials__list">
+        {% for item in currentTestimonials %}
+            <li class="testimonials__item flow">
+                <div class="testimonials__avatar">
+                    {% image item.image,
+                    "",
+                    sizes = "5.25em",
+                    widths = [84, 168, 336, 500] %}
+                </div>
+                <div class="testimonials__heading">
+                    <p class="testimonials__author">{{ item.author }}</p>
+                    {% if item.site %}
+                        <p class="testimonials__subtitle">{{ item.site | noProto }}</p>
+                    {% endif %}
+                    {% if item.subtitle %}
+                        <p class="testimonials__subtitle">{{ item.subtitle }}</p>
+                    {% endif %}
+                </div>
+                <div class="testimonials__body">
+                    <p>{{ item.copy | trim }}</p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}

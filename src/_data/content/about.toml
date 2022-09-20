@@ -1,0 +1,62 @@
+heading = "About"
+
+# =========================================================
+#   Musician section
+# =========================================================
+[[ sections ]]
+heading  = "I'm a musician."
+id       = "musician"
+image    = "bradley/bradley-at-organ.jpg"
+imageAlt = "Bradley, smiling and facing the camera, sitting in front of a 5-manual organ."
+copy     = """
+I am a classically-trained pianist and organist, and I have graduate
+degrees in both instruments. I’m often asked who my favorite composers
+are. That’s a tough question, because I’m eclectic. But as a pianist,
+I gravitate towards Beethoven, Brahms, and Liszt. And as an organist,
+my hands are feet are happiest with Bach, Widor, and more contemporary
+music. You can find some recordings on my music page.
+
+I teach piano, organ and music theory. I also do a bit of composition
+and arrangement, and mostly write hymn settings for liturgical use.
+"""
+    [[ sections.links ]]
+    text = "Shop for scores."
+    url  = "/shop/"
+    [[ sections.links ]]
+    text = "Explore my music."
+    url  = "/music/"
+    [[ sections.links ]]
+    text = "Hire me as a teacher."
+    url  = "/services/#music"
+
+
+# =========================================================
+#   Developer section
+# =========================================================
+[[ sections ]]
+heading  = "I'm a web developer."
+id       = "developer"
+image    = "bradley/bradley-thinking.jpg"
+imageAlt = "Bradley deep in thought in front of his laptop."
+copy     = """
+My main interest as a developer is the ethical web: making the web
+accessible to all users, and choosing eco-friendly tools and platforms that
+minimize carbon footprint. Many of the popular products (e.g. Wordpress,
+Squarespace, Wix, …) are only focused on visual design and low price. As a
+result, sites built with these tools are often slow, bloated with 10x the
+needed code, and inaccessible to many users.
+
+I build websites from the ground up, prioritizing accessibility from the
+get-go and delivering only what’s needed to the user. The result is a
+tailor-made site that is not only aesthetically pleasing, but also
+lightweight, blazing fast, usable on any device, and eco-conscious.
+"""
+    [[ sections.links]]
+    text = "Hire me as a web developer."
+    url  = "/services/#development"
+    [[ sections.links]]
+    text = "Read more about ethical web design."
+    url  = "/dev/#ethical-web"
+    [[ sections.links]]
+    text = "Explore my projects."
+    url  = "/dev/#portfolio"

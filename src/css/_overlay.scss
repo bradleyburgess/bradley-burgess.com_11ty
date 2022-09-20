@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+.img-overlay {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.bradleybrick {
+  &::after {
+    background: linear-gradient(
+      179.84deg,
+      rgba(20, 20, 20, 0) 77.66%,
+      #141414 95.16%,
+      #141414 100%
+    );
+  }
+}

@@ -1,0 +1,9 @@
+<nav class="cta" aria-label="call to action">
+    <ul role="list" class="cta__list flow">
+        {% for item in ctaLinks %}
+            <li>
+                <a href="{{ item.url }}" class="cta__link">{{ item.text | ctaLink | safe }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

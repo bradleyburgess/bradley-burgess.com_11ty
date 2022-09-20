@@ -1,0 +1,31 @@
+---
+layout: "layouts/base.njk"
+permalink: "/"
+---
+
+<div class="container">
+    <div class="grid cols2-even">
+        <div class="container--md edge-to-edge img-overlay bradleybrick">
+            {% image content.home.image,
+            content.home.imageAlt,
+            loading = "eager",
+            sizes="(max-width: 41.25em) 100vw, (max-width: 63.9375em) 39.25rem, (max-width: 83.25em) 47vw, 38.625rem"
+             %}
+        </div>
+        <div class="jumbo container--md flow">
+            <h1 class="jumbo__heading">{{ content.home.heading }}</h1>
+            {% markdown %}{{ content.home.copy | safe }}{% endmarkdown %}
+            {# <nav class="cta" aria-label="call to action">
+                <ul role="list" class="cta__list flow">
+                    {% for item in content.home.links %}
+                        <li>
+                            <a href="{{ item.url }}" class="cta__link">{{ item.text | ctaLink | safe }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav> #}
+            {% set ctaLinks = content.home.links %}
+            {% include "partials/cta.njk" %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+@use "variables" as *;
+
+.services {
+  &__heading {
+    font-family: $ff-alternate;
+    font-size: 1.875rem;
+  }
+}

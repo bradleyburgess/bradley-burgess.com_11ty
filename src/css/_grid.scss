@@ -1,0 +1,54 @@
+@use "variables" as *;
+
+.grid {
+  display: grid;
+  row-gap: 3rem;
+}
+
+@media screen and (min-width: 64em) {
+  .cols2-even {
+    grid-template-areas: "one two";
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .switch > *:nth-child(2n) {
+    grid-area: one;
+  }
+  .switch > *:nth-child(2n - 1) {
+    grid-area: two;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .cols2-one-two {
+    grid-template-areas: "one two";
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+  }
+
+  .cols2-two-one {
+    grid-template-areas: "one two";
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+  }
+
+  .switch > *:nth-child(2n) {
+    grid-area: one;
+  }
+  .switch > *:nth-child(2n - 1) {
+    grid-area: two;
+  }
+}
+
+.grid.wide-gap {
+  @media screen and (min-width: 64em) {
+    gap: fluid-size(64, 256, 1024, 1600);
+  }
+}
+
+.grid .span2 {
+  @media screen and (min-width: 32.5em) {
+    grid-column: 1 / span 2;
+  }
+}

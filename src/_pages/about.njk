@@ -1,0 +1,38 @@
+---
+layout: "layouts/with-title.njk"
+permalink: /about/
+tmplClass: page
+title: About
+---
+
+<div class="container">
+    {% for section in content.about.sections %}
+        <section class="section">
+            <div class="grid cols2-even {% if loop.index % 2 === 1 %} switch {% endif %}">
+                <div class="flow container--md">
+                    <h2>{{ section.heading }}</h2>
+                    {% markdown %}{{ section.copy | safe }}{% endmarkdown %}
+                    {% if section.links %}
+                        {# <nav class="cta" aria-label="call to action">
+                            <ul role="list" class="cta__list flow">
+                                {% for item in section.links %}
+                                    <li>
+                                        <a href="{{ item.url }}" class="cta__link">{{ item.text | ctaLink | safe }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </nav> #}
+                        {% set ctaLinks = section.links %}
+                        {% include "partials/cta.njk" %}
+                    {% endif %}
+                </div>
+                <div class="img--full-height edge-to-edge container--md">
+                    {% image section.image,
+                    section.imageAlt,
+                    loading = "eager",
+                    sizes="(max-width: 41.375em) 100vw, (max-width: 63.9375em) 39.25, (max-width: 84.75em) 45vw, 38.625rem" %}
+                </div>
+            </div>
+        </section>
+    {% endfor %}
+</div>

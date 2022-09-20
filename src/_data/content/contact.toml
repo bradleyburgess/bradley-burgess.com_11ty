@@ -1,0 +1,24 @@
+heading = "Contact"
+
+[ form ]
+heading = "Get in touch."
+copy    = """
+Whether you want to hire me, ask a question about something you’ve read here, 
+or just want to say hi — I’d love to hear from you.
+
+You can find me via the social links, or drop me a line using this contact form.
+"""
+
+[ social ]
+heading  = "Be social."
+image    = "bradley/bradley-outside.jpg"
+imageAlt = """Bradley sitting outside on a beautiful day, leaning forward with \
+sunglasses on."""
+links = [
+    "GitHub",
+    "SoundCloud",
+    "YouTube",
+    "Twitter",
+    "Telegram",
+    "WhatsApp"
+]

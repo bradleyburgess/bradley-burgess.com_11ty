@@ -1,0 +1,33 @@
+@use "variables" as *;
+
+.table {
+  text-align: left;
+
+  &__row {
+    line-height: 1.6;
+  }
+
+  &__head {
+    font-weight: 700;
+    padding-right: 2rem;
+  }
+
+  &__head,
+  &__cell {
+    vertical-align: top;
+    padding-bottom: 1rem;
+  }
+
+  @media only screen and (max-width: 26.9375em),
+    only screen and (min-width: 64em) and (max-width: 80.9375em) {
+    tr,
+    th,
+    tr {
+      display: block;
+    }
+
+    th {
+      padding-bottom: 0;
+    }
+  }
+}

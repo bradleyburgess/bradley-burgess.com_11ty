@@ -1,0 +1,20 @@
+<div class="page-heading">
+    <div class="container">
+        <h1>
+            <span>{{ title }}</span>
+        </h1>
+        {% if secondaryNav %}
+            <div class="center">
+                <nav class="navigation" aria-label="secondary">
+                    <ul role="list">
+                        {% for item in secondaryNav %}
+                            <li>
+                                <a href="#{{ item | lower | trim | slugify }}">{{ item | lower | trim }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+        {% endif %}
+    </div>
+</div>

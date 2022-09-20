@@ -1,0 +1,103 @@
+@use "variables" as *;
+
+$min-width: 440px;
+
+.testimonials {
+  --margin-top: 4rem;
+  position: relative;
+  margin-bottom: 3rem;
+  width: 100%;
+
+  // quotes decoration
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 9.375rem;
+    height: 7.5rem;
+    z-index: -1;
+  }
+  &::before {
+    top: -3.875rem;
+    left: -1rem;
+    background: url("../img/backgrounds/open-quote.svg") no-repeat;
+    background-size: contain;
+  }
+  &::after {
+    bottom: -3.875rem;
+    right: -1rem;
+    background: url("../img/backgrounds/close-quote.svg") no-repeat;
+    background-size: contain;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: fluid-size(48, 72, 360, 1600);
+    column-gap: fluid-size(32, 72, 1024, 1600);
+    // li + li {
+    // margin-top: 3rem;
+    // }
+  }
+
+  &__item {
+    --flow-space: 0.5em;
+    display: grid;
+    place-items: center;
+    grid-template-areas:
+      "avatar"
+      "heading"
+      "body";
+    max-width: 27.5rem;
+
+    @media screen and (min-width: #{$min-width}) {
+      grid-template-areas:
+        "avatar heading"
+        "body body";
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto 1fr;
+      place-items: center start;
+      column-gap: 1.5rem;
+      row-gap: 0.5rem;
+    }
+  }
+
+  &__heading {
+    grid-area: heading;
+    text-align: center;
+
+    @media screen and (min-width: #{$min-width}) {
+      text-align: left;
+    }
+  }
+
+  &__avatar {
+    height: 5.25rem;
+    width: 5.25rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__author {
+    grid-area: author;
+    font-family: $ff-body;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    grid-area: site;
+    margin-top: 0;
+    font-size: 0.75rem;
+    color: $clr-neutral-800;
+  }
+
+  &__body {
+    grid-area: body;
+    font-size: 0.875rem;
+    font-style: italic;
+    align-self: start;
+  }
+}

@@ -1,0 +1,175 @@
+/*
+ * ==============================================
+ *  SASS Variables
+ * ==============================================
+ */
+
+@use "variables" as *;
+
+/*
+ * ==============================================
+ *  CSS Custom Properties
+ * ==============================================
+ */
+
+:root {
+  --header-padding: 0.6rem;
+  --header-min-height: 3.25rem;
+  --footer-min-height: 10rem;
+  --footer-padding: 0.6rem;
+  --x-padding: 1rem;
+  --container-width: 81.25rem;
+  --separator-height: 0.125rem;
+
+  @media screen and (min-width: 64em) {
+    --x-padding: 1rem;
+    --header-min-height: 4.099375rem;
+    --header-padding: 1.5rem; }
+}
+
+/*
+ * ==============================================
+ *  Layout
+ * ==============================================
+ */
+
+html {
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+}
+
+// 1. make sure footer is at the bottom of the screen
+// 2. padding for mobile
+main {
+  min-height: calc(
+    100vh -
+      (var(--header-min-height) + var(--footer-min-height) + var(--footer-padding) * 2 - 0.3125rem)
+  ); // there's something weird happening with this; the 0.3125rem is a hacky fix
+  padding-top: clamp(2rem, calc(2rem + ((100vw - 64em) * 0.135416667)), 4.875rem);
+}
+
+/*
+ * ==============================================
+ *  Basic Utility Classes
+ * ==============================================
+ */
+
+.hidden {
+  display: none;
+}
+
+.no-scroll,
+.menu-open {
+  overflow: hidden;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1.5em);
+}
+
+/*
+ * ==============================================
+ *  Typography
+ * ==============================================
+ */
+
+body {
+  font-family: $ff-body;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $ff-alternate;
+  line-height: 1.1;
+  // max-width: 30ch;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: $ff-body;
+}
+
+p {
+  line-height: 1.6;
+  color: $clr-offwhite;
+}
+
+p + p {
+  margin-top: 1em;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+*:not(nav) > ul:not([class]) {
+  padding-left: 1.25rem;
+}
+
+/*
+ * ==============================================
+ *  Colors
+ * ==============================================
+ */
+
+body {
+  background-color: $clr-bg;
+  color: $clr-fg;
+}
+
+/*
+ * ==============================================
+ *  Links
+ * ==============================================
+ */
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+p {
+  a {
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
+}
+
+a:focus-visible img {
+  outline: 1px solid white;
+  outline-offset: 0.5rem;
+}
+
+a.sr-only {
+  background-color: $clr-bg;
+  font-size: 1.25rem;
+  padding: 1em 1em;
+  text-transform: uppercase;
+  top: 0.25rem;
+  left: 0.25rem;
+  outline: 1px solid $clr-white;
+}
+
+:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 0.2rem;
+}
+
+main:focus {
+  outline: none;
+}

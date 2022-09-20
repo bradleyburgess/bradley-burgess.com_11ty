@@ -1,0 +1,19 @@
+heading  = "Hi, I'm Bradley."
+image    = "bradley/bradley-brick.jpg"
+imageAlt = "Close up of Bradley, half-smiling, sitting in front of an open brick wall"
+copy     = """
+I'm a musician and web developer. I'm passionate about things with keyboards, \
+open-source software. and the ethical web.
+"""
+
+[[ links ]]
+text = "Check out my services."
+url  = "/services/"
+
+[[ links ]]
+text = "Explore my music."
+url  = "/music/"
+
+[[ links ]]
+text = "Read more about me."
+url  = "/about/"

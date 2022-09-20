@@ -1,0 +1,12 @@
+@use "variables" as *;
+
+.social {
+  &__list {
+    display: grid;
+    row-gap: 1.25rem;
+    @media screen and (min-width: 22.5em) {
+      grid-template-columns: auto 1fr;
+      column-gap: 20%;
+    }
+  }
+}

@@ -1,0 +1,234 @@
+heading = "Video  tracks."
+id      = "video"
+
+[[ tracks ]]
+composer = "Bach, J.S."
+title    = "Prelude & Fugue in A Minor"
+tags     = [ "complex", "powerful" ]
+catalog  = "BWV 543"
+date     = "11/18/2016"
+location = "Third Baptist Church, St. Louis, MO"
+id       = "StIe7jGpXcI"
+live     = true
+notes    = """
+This is one of Bach’s most famous organ preludes and fugues. The prelude is 
+rhapsodic and features toccata-like work on the manuals over a low, slow-moving 
+bass.
+
+The 6/8 fugue is decided but dance-like. The pedal drops out in the middle 
+section, which allows for convenient change of color on a different manual. The 
+fugue draws to a close with an acceleration towards a virtuosic 
+explosion.
+"""
+
+
+
+[[ tracks ]]
+composer = "Brahms, Johannes"
+title    = "“Schmücke dich, o liebe Seele” (Deck, Thyself, My Soul)"
+tags     = [ "simple", "beautiful" ]
+catalog  = "Op. 122, No. 5"
+date     = "?04/06/2020"
+location = "Edenton Street United Methodist Church, Raleigh, NC"
+id       = "3lYjWvF4mzQ"
+notes    = """
+The *Eleven Chorale Preludes* of Brahms are his last published opus (published 
+postumously), written at the end of his life. They are all based on Lutheran 
+chorales, and there is something of a Lenten theme to the collection. They were 
+written after the death of his friend, Clara Schumann, and he was likely aware 
+of his illness.
+
+“Schmücke Dich”, though, is a communion hymn, the English translation often 
+having the title, “Deck thyself, my soul, with gladness”
+"""
+
+
+
+[[ tracks ]]
+composer = "Carter, Andrew"
+title    = "Toccata on “Veni Emmanuel” (O Come, O Come, Emmanual)"
+tags     = [ "powerful", "flashy" ]
+date     = "?12/15/2020"
+location = "Edenton Street United Methodist Church, Raleigh, NC"
+id       = "bD7wm5GWxrQ"
+notes    = """
+This fiery setting of *O Come, O Come, Emmanuel* reveals an influence of the 
+French organ school, especially noticeable in the toccata figures used in the 
+manuals. The sophisticated but accessible harmonic pallette and the clever use 
+of canon in the quieter middle section demonstrate Carter's compositional 
+skill.
+
+This is a seasonal favorite of mine, that I find an excuse to pull out every 
+Advent!
+"""
+
+
+
+[[ tracks ]]
+composer = "Elgar, Edward"
+title    = "Nimrod, from Enigma Variations"
+tags     = [ "slow", "emotional" ]
+date     = "10/29/2021"
+location = "Edenton Street United Methodist Church, Raleigh, NC"
+id       = "qDPLoBOcQ3c"
+notes    = """
+Elgar's *Variations on an Original Theme*, often referred to as the “Enigma” 
+Variations have long been a symphonic favorite of audiences. The “Enigma” 
+likely refers to a hidden melody.
+
+“Nimrod” has become a standalone piece, often played at British memorials. 
+According to Elgar, the opening bars contain a hint of the famous second 
+movement of Beethoven's *Pathetique Sonata*.
+"""
+
+
+
+[[ tracks ]]
+composer = "Elliott, Richard"
+title    = "Toccatina on “Angels We Have Heard On High”"
+tags     = [ "short", "fun", "light" ]
+date     = "12/12/2020"
+location = "Edenton Street United Methodist Church, Raleigh, NC"
+id       = "FayQsx2IjQU"
+notes    = """
+This short and fun setting of *Angels We Have Heard On High* features 
+treacherously quick manual changes. The irregular 7/8 metre adds to the 
+catchiness, making it a great encore or start to a Christmas program.
+"""
+
+
+
+[[ tracks ]]
+composer = "Guilmant, Alexandre"
+title    = "Organ Sonata No. 1, Finale"
+tags     = [ "brilliant", "virtuosic" ]
+date     = "08/21/2021"
+location = "Edenton Street United Methodist Church, Raleigh, NC"
+id       = "8hj6oUPsUfE"
+notes    = """
+This exciting conclusion to Guilmant's first Organ Sonata has long been a 
+favorite of organists and audiences alike. The music grabs you right from the 
+start, and doesn't relent. Even in the lyrical middle section, the toccata 
+figures from the opening interrupt the stillness. The concluding reprise of the 
+middle chorale — now triumphant — is thrilling. I've taken the liberty of 
+adding a little more of the solo tubas than perhaps what he calls for at the 
+end, but I think it's effective. One of my absolute favorite pieces to play.
+"""
+
+
+
+[[ tracks ]]
+composer = "Karg-Elert, Sigfrid"
+title    = "Praise the Lord with Drums & Cymbals"
+tags     = [ "lively", "fanfare", "acrobatic" ]
+catalog  = "Op. 101 No. 5"
+date     = "09/25/2020"
+location = "Edenton Street United Methodist Church, Raleigh, NC"
+id       = "vzASO2Lr-Y0"
+notes    = """
+This piece from *33 Portraits, Op. 101*, is more conservative harmonically 
+than many of his other works, and indeed is neo-Baroque, as the caption 
+“Alla Handel” would lead us to believe.
+
+Originally for the harmonium, this piece is often freely adapted by organists 
+in terms of manual changes and registration. I took Diane Bish's edition as a 
+starting point for my interpretation, and aimed to use as wide a color 
+pallette as possible.
+"""
+
+
+
+[[ tracks ]]
+composer = "Liszt, Franz"
+title    = "Fantasy & Fugue on B-A-C-H"
+tags     = [ "virtuosic", "colorful" ]
+catalog  = ""
+date     = "11/18/2016"
+live     = true
+location = "Third Baptist Church, St. Louis, MO"
+id       = "1IlX_54-Yus"
+notes    = """
+Unlike his vast body of piano music, Liszt's output for organ isn't very 
+extensive. This piece is one of my favorite recital pieces, though, as it 
+provides opportunity to really show off an organ's capabilities. Liszt gives 
+little to now registration indications, which I take as an opportunity to be 
+really creative. 
+
+Bach's name has long been used as a musical motiv, with the letters B-A-C-H 
+equating to the notes B♭-A-C-B♮ when using the German alphabet. The first four 
+notes in the opening pedal solo spell out this motiv, which is heard throughout 
+this rhapsodic showpiece.
+"""
+
+
+
+[[ tracks ]]
+composer = "Purvis, Richard"
+title    = "Carol Rhapsody"
+tags     = [ "fun", "christmas-y" ]
+date     = "12/15/2020"
+location = "Edenton Street United Methodist Church, Raleigh, NC"
+id       = "4vYCOTOBfJg"
+notes    = """
+This piece has long been a Christmas favorite of organists. Purvis had a long 
+tenure at Grace Cathedral, and the Aeolian Skinner organ had a profound 
+influence on his composition. The “Purvis sound” had influences of theatre 
+organ playing, including the use of tremulants. This is heard in the opening very clearly.
+
+The piece takes us through Silent Night and Hark! the Herals, and ends with a 
+splendid toccata on O Come, All Ye Faithful.
+"""
+
+
+
+[[ tracks ]]
+composer = "Purvis, Richard"
+title    = "Prelude on “Greensleeves” (What Child Is This?)"
+tags     = [ "haunting", "lush" ]
+date     = "12/15/2020"
+location = "Edenton Street United Methodist Church, Raleigh, NC"
+id       = "v1BUwVxm4FA"
+notes    = """
+This is a haunting setting of *Greensleeves* (“What Child Is This?”). One can 
+almost hear the walking of the wise men in the repeated pedal notes! Allegedly 
+this piece was written in a foxhole during World War II. I marvel at his 
+ability to create something so beautiful in such a circumstance.
+"""
+
+
+
+[[ tracks ]]
+composer = "Weber, Jacob"
+title    = "Two Soettings on ANTIOCH (Joy to the World)"
+tags     = [ "flashy", "exuberant" ]
+date     = "12/12/2020"
+location = "Edenton Street United Methodist Church, Raleigh, NC"
+id       = "Ge3K1gByNGQ"
+notes    = """
+Jacob Weber is active today as a composer, clinician and music editor. A 
+practicing church musician, his body of work includes a lot of liturgical organ 
+music. The three settings of *Antioch* (“Joy to the World”) are a fun addition 
+to the Christmas organ repertoire. Here I present the first and last from the 
+set, which make for a great “introduction” and “toccata”. I've often used the 
+last movement as a postlude during Christmas time.
+"""
+
+
+
+[[ tracks ]]
+composer = "Improvisation"
+title    = "“Let Everything That Has Breath”"
+tags     = [ "rythmic", "improvised" ]
+date     = "03/09/2021"
+location = "Edenton Street United Methodist Church, Raleigh, NC"
+id       = "QTCYr53x64Q"
+notes    = """
+For Lent 2021 — during the height of the COVID-19 pandemic — I decided to do a 
+weekly improvised meditation. The church were I was serving was running a 
+virtual at-home series, with themes coming from various scripture passages. 
+This is one of those improvisations, based on the closing of Psalm 150: “Let 
+everything that has breath, praise The Lord.”
+
+The piece is based on *Lobe den Herren*, Praise to the Lord the Almighty, and 
+is a driving, rhythmically-jagged flourish on the tune.
+"""

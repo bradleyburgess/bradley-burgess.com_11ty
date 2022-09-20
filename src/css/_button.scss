@@ -1,0 +1,61 @@
+@use "variables" as *;
+
+.button {
+  border-radius: 999vmax;
+  padding: 0.5em 1em;
+  border: 2px solid $clr-white;
+  font-weight: 600;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $clr-neutral-800;
+    color: $clr-bg;
+  }
+
+  &.primary {
+    background-color: $clr-white;
+    color: $clr-bg;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $clr-bg;
+      color: $clr-white;
+    }
+  }
+
+  &.secondary {
+    background-color: $clr-bg;
+    color: $clr-fg;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $clr-fg;
+      color: $clr-bg;
+      border-color: $clr-fg;
+    }
+  }
+
+  &[disabled] {
+    cursor: default;
+    border-color: $clr-neutral-700;
+    color: $clr-neutral-700;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $clr-bg;
+      color: $clr-neutral-700;
+      border-color: $clr-neutral-700
+    }
+  }
+
+  &__container {
+    --margin-top: 4rem;
+    display: flex;
+    column-gap: 3rem;
+    row-gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

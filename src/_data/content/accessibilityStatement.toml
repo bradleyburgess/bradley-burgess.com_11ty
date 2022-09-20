@@ -1,0 +1,43 @@
+heading = "Accessibility Statement"
+copy = """
+
+I believe in removing barriers that prevent the world and the internet from
+being accessible to all. The reality is that most of us live in a deeply ableist
+society, where many are prevented from having equal access to resources,
+information and services.
+
+I am committed to making my corner of the internet a place that is conscious of
+its users, conscious of its environmental impact, and free from obstacles that
+prevent everyone from accessing and enjoying it.
+
+## What I do
+
+I spend a great deal of time thinking through the structure, layout, and
+representation in code of the sites I build. I do my best to educate myself in
+best practices regarding accessible and ethical web design, and spend a lot of
+time reading articles, blogs, and tutorials surrounding accessible design and
+code. 
+
+I do my best to thoroughly best each page. I do this through a combination of
+the following:
+
+- this fantastic [A11y Project checklist](https://www.a11yproject.com/checklist/)
+- Google Lighthouse (which catches things like color contrast)
+- manual testing with a screen reader
+- manual testing with keyboard navigation
+
+## Web Browsers
+
+I build for modern browsers, which offer the most accessibility and usability
+without much javascript. I don't cater to Internet Explorer, which I think is
+acceptable given that it is only legacy enterprise and government systems that
+use it anymore. It is good practice to keep your browser up to date, and I would
+urge you to do that.
+
+## Feedback 
+
+If you find any part of this site difficult to use, *please* [drop me a line and
+let me know](/contact/). I will do my best to improve that page / feature as
+quickly as possible.
+
+"""

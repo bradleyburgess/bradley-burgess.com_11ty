@@ -1,0 +1,23 @@
+@use "variables" as *;
+
+.markdown {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    break-after: avoid;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 0;
+  }
+
+  ul, ol {
+    break-inside: avoid;
+    margin-left: 1.25rem;
+  }
+}

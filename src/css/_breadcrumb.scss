@@ -1,0 +1,41 @@
+@use "variables" as *;
+
+.breadcrumb {
+  padding-left: 1rem;
+  a {
+    position: relative;
+    font-weight: 400;
+    &::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      top: 0.0625em;
+      left: 0;
+      background: url("../img/icons/flat/arrow-left-solid.svg") no-repeat;
+      height: 0.9em;
+      width: 1em;
+    }
+  }
+
+  &.forward {
+    padding-left: 0;
+    a {
+      &::before {
+        display: none;
+        background: none;
+      }
+      &::after {
+        content: "";
+        content: "";
+        display: inline-block;
+        position: relative;
+        top: 0.1875em;
+        right: 0;
+        margin-left: 0.3em;
+        background: url("../img/icons/flat/arrow-right-solid.svg") no-repeat;
+        height: 0.9em;
+        width: 1em;
+      }
+    }
+  }
+}

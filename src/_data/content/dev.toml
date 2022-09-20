@@ -1,0 +1,311 @@
+# =========================================================
+#   WHAT I DO
+# =========================================================
+
+[ whatido ]
+heading = "What I do."
+id      = "what-i-do"
+copy = """
+I am a freelance web developer, and my main interest is in working towards a 
+more ethical web. You can read more about the [ethical web](#ethical-web) 
+below.
+
+In my work, I prioritize accessibility for all users, performance, speed, and 
+following best practices.
+
+I am available for hire for any of the following:
+
+- building new websites from scratch
+- fixing issues on existing websites
+- performance and accessibility consulting
+
+For more information, see the [services](/services) page.
+"""
+
+
+
+# =========================================================
+#   TESTIMONIALS
+# =========================================================
+
+[[ whatido.testimonials ]]
+author = "Jan T."
+site   = "https://thisblogisaboutyou.com"
+image  = "https://dl.dropboxusercontent.com/s/pw1k830qtj7twdf/jan.jpg?dl=0"
+copy   = """ \
+It's so easy for me to add content to my blog! I didn't have a clear idea of \
+how I wanted it to look, but Bradley managed to take my few ideas and make it \
+look really great. He also added new features I needed in record time. \
+"""
+
+
+[[ whatido.testimonials ]]
+author = "Kerri S."
+site   = "https://brakdakkie.co.za"
+image  = "https://dl.dropboxusercontent.com/s/zuh3j8aa5k7pzi4/kerri.jpg?dl=0"
+copy   = """ \
+All through the process Bradley amazed me. I'm so happy with how the redesigned \
+site turned out. He is also so responsive and so quick to make changes. I \
+couldn't be happier.
+"""
+
+
+
+# =========================================================
+#   PORTFOLIO
+# =========================================================
+
+[ portfolio ]
+heading = "Portfolio."
+id      = "portfolio"
+
+[[ portfolio.items ]]
+title       = "This Blog Is About You"
+url         = "https://thisblogisaboutyou.com"
+description = "Personal blog"
+image       = "screenshots/this-blog-is-about-you.png"
+
+
+[[ portfolio.items ]]
+title       = "Brakdakkie Guest Cottages"
+url         = "https://brakdakkie.co.za"
+description = "Bed & Breakfast"
+image       = "screenshots/brakdakkie.png"
+
+
+[[ portfolio.items ]]
+title       = "Bradley Burgess"
+url         = "https://bradley-burgess.com"
+description = "Personal website"
+image       = "screenshots/bradley-burgess.png"
+
+
+
+
+# =========================================================
+#   ETHICAL WEB
+# =========================================================
+
+[ ethicalweb ]
+heading = "Ethical web."
+id      = "ethical-web"
+
+copy = """
+As a web developer, my main interest is in helping to create a more ethical 
+web. What do I mean by the “ethical web”? There is no single, universally 
+agreed-upon definition, but In short, the ethical web puts the user and the 
+environment first. 
+
+Ethical websites:
+
+- are accessible to any user, regardless of (dis)ability
+- are secure, and transparent about privacy
+- are lightweight and use minimal device resources
+- don’t make many assumptions about the user
+- cater to a wide range of devices and internet speeds
+- are eco-concious, choosing environmentally-friendly tools and green web 
+  hosting
+
+A great reference is the 
+[“Ethical Web Principles” document](https://www.w3.org/2001/tag/doc/ethical-web-principles/) 
+created by the World Wide Web Consortium (W3C), which outlines some of these 
+requirements. [The Green Web Foundation](https://www.thegreenwebfoundation.org/) 
+is a good resource for understanding the need for a fossil-free internet.
+
+In building accessible websites, these are some of the considerations I make:
+
+- is this site 100% functional for persons using screen readers?
+- do all images have appropriate “alt” text?
+- can this site work well with javascript disabled?
+- is the site 100% useable for persons that rely on keyboard-only navigation?
+- are animations disabled for users with motion sensitivity?
+- do sliders / carousels have easy-to-use controls?
+- is there enough color contrast so that text is easily readable?
+- does the site still work at high zoom levels?
+- does the site perform well on very slow internet speeds?
+
+I am always trying to learn more about best practices for accessible and 
+ethical web design and development. You can read more about that tools I use 
+below. If you notice anything that needs improvement on this site, 
+please [let me know](/contact).
+"""
+
+
+
+# =========================================================
+#   OTHER PROJECTS
+# =========================================================
+
+[ otherprojects ]
+heading = "Other Projects."
+id      = "other-projects"
+copy = """
+These days, I am primarily making static sites (i.e. not web apps), but I love 
+tinkering, and have made various other projects.
+
+I am most at home with Javascript in the browser and Node, but I am pretty 
+comfortable with Python and reasonably adept with SQL and Google Sheets as 
+well; if you need help creating a robust spreadsheet solution to a problem, I 
+am available for that work as well. See the [services page](/services) for more 
+info.
+"""
+
+[[ otherprojects.items ]]
+title       = "hymnary-scrape"
+description = "A simple python cli app to download hymn texts from hymnar.org"
+stack       = [ "python" ]
+github      = "https://github.com/bradleyburgess/hymnary-scrape"
+image       = "https://images.unsplash.com/photo-1520446266423-6daca23fe8c7?w=1920"
+imageAlt    = ""
+
+
+[[ otherprojects.items ]]
+title       = "docker-dropbox"
+description = """Dropbox in Docker. A fork of @janeczku/docker-dropbox, which \
+is now unmaintained. Updated for Ubuntu Jammy."""
+stack       = [ "docker", "linux" ]
+github      = "https://github.com/bradleyburgess/docker-dropbox"
+image       = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Antu_dropbox.svg/512px-Antu_dropbox.svg.png"
+imageAlt    = ""
+
+
+[[ otherprojects.items ]]
+title       = "eleventy-plugin-broken-links"
+description = "A plugin for @11ty/eleventy to check your build for broken links."
+stack       = [ "node", "eleventy" ]
+github      = "https://github.com/bradleyburgess/eleventy-plugin-broken-links"
+image       = "https://live.staticflickr.com/1640/24445486463_a3c6298ed0_b.jpg"
+imageAlt    = ""
+
+
+[[ otherprojects.items ]]
+title       = "256-color-matcher"
+description = "A web app to find the closest matching standard 8-bit / 256 color from a given input."
+stack       = [ "javascript", "html", "css" ]
+github      = "https://github.com/bradleyburgess/256-color-matcher"
+external    = "https://256-color-matcher.netlify.app"
+image       = "projects/256-color-matcher.png"
+imageAlt    = ""
+
+
+
+# =========================================================
+#   MY TOOLS
+# =========================================================
+
+[ mytools ]
+heading = "My tools."
+id      = "my-tools"
+copy    = """
+Here are some of the tools I use in my work as a developer and musician.
+"""
+
+# development tools ---------------------------------------
+[ mytools.development ]
+heading = "Development tools."
+
+    [[ mytools.development.tools ]]
+    title       = "Pop!_OS"
+    class       = "popos"
+    description = "linux distribution"
+
+    [[ mytools.development.tools ]]
+    title       = "Figma"
+    class       = "figma"
+    description = "design & prototype"
+
+    [[ mytools.development.tools ]]
+    title       = "VS Code"
+    class       = "vscode"
+    description = "code editor"
+
+    [[ mytools.development.tools ]]
+    title       = "NeoVim"
+    class       = "neovim"
+    description = "code editor"
+
+    [[ mytools.development.tools ]]
+    title       = "Eleventy"
+    class       = "eleventy"
+    description = "static site generator"
+
+    [[ mytools.development.tools ]]
+    title       = "Netlify"
+    class       = "netlify"
+    description = "hosting & deployment"
+
+    [[ mytools.development.tools ]]
+    title       = "Digital Ocean"
+    class       = "digitalocean"
+    description = "hosting & deployment"
+
+    [[ mytools.development.tools ]]
+    title       = "Hygraph"
+    class       = "hygraph"
+    description = "content management system"
+
+    [[ mytools.development.tools ]]
+    title       = "Strapi"
+    class       = "strapi"
+    description = "content management system"
+
+# languages -----------------------------------------------
+[ mytools.languages ]
+heading = "Languages & Frameworks."
+
+    [[ mytools.languages.tools ]]
+    title = "HTML"
+    class = "html"
+
+    [[ mytools.languages.tools ]]
+    title = "CSS"
+    class = "css"
+
+    [[ mytools.languages.tools ]]
+    title = "Javascript"
+    class = "javascript"
+
+    [[ mytools.languages.tools ]]
+    title = "Typescript"
+    class = "typescript"
+
+    [[ mytools.languages.tools ]]
+    title = "React"
+    class = "react"
+
+    [[ mytools.languages.tools ]]
+    title = "SASS"
+    class = "sass"
+
+    [[ mytools.languages.tools ]]
+    title = "Bash"
+    class = "bash"
+
+    [[ mytools.languages.tools ]]
+    title = "Python"
+    class = "python"
+
+
+# music tools ---------------------------------------------
+[ mytools.music ]
+heading = "Music tools."
+
+    [[ mytools.music.tools ]]
+    title       = "Lilypond"
+    class       = "lilypond"
+    description = "music notation"
+
+    [[ mytools.music.tools ]]
+    title       = "Jitsi Meet"
+    class       = "jitsimeet"
+    description = "video conferencing for lessons"
+
+    [[ mytools.music.tools ]]
+    title       = "Audacity"
+    class       = "audacity"
+    description = "audio editing"
+
+    [[ mytools.music.tools ]]
+    title       = "Shotcut"
+    class       = "shotcut"
+    description = "video editing"

@@ -1,0 +1,29 @@
+footer:
+  - name: "Twitter"
+    url: "https://twitter.com/bburgess_keys"
+
+  - name: "YouTube"
+    url: "https://www.youtube.com/c/BradleyBurgessmusic"
+
+  - name: "GitHub"
+    url: "https://github.com/bradleyburgess"
+
+
+all:
+  - name: "Twitter"
+    url: "https://twitter.com/bburgess_keys"
+
+  - name: "GitHub"
+    url: "https://github.com/bradleyburgess"
+
+  - name: "Soundcloud"
+    url: "https://soundcloud.com/bburgess_keys"
+
+  - name: "YouTube"
+    url: "https://www.youtube.com/c/BradleyBurgessmusic"
+
+  - name: "Telegram"
+    url: "https://t.me/bburgess_keys"
+
+  - name: "WhatsApp"
+    url: "https://wa.me/16465438574"

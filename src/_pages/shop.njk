@@ -1,0 +1,104 @@
+---
+layout: "layouts/with-title.njk"
+permalink: /shop/
+title: Shop
+pageJs: shop
+description: "Shop for scores and other digital products."
+ogImage: "{{ products.scores.hymns[0].images[0] }}"
+ogAlt: "null"
+---
+
+<div class="container">
+    <div class="container--md center">
+        <div class="constrain--lg fs-300 mt--rel flex-justify-center flex-align-center gap-900">
+            <div class="flex-align-center">
+                <span class="icon flat info fs-900"></span></div>
+            <div>
+                <p class="italic">All products are digital downloads. After checkout, you will receive an automated email with the download link(s).</p>
+                <p class="italic js-hidden">Note: Javascript needs to be anabled for the cart functionality, but you can still use the "buy now" links.</p>
+            </div>
+        </div>
+        <div class="constrain--lg fs-300 mt--rel flex-justify-center flex-align-center gap-900">
+            <div class="flex-align-center">
+                <span class="icon flat lock fs-900"></span></div>
+            <div>
+                <p class="italic">All transactions are handled securely through Stripe Checkout, so you can be assured your information is safe.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="container--md">
+        <div class="flex-justify-end">
+            <cart-counter></cart-counter>
+        </div>
+    </div>
+</div>
+
+<section class="section mt" id="scores">
+    <div class="container">
+        <div class="flow center container--md">
+            <h2>Scores.</h2>
+        </div>
+        {# <div class="container--md mt cards" data-variant="horizontal"> #}
+        {# <h3>Hymn Settings</h3> #}
+        <div class="mt cards" data-variant="score">
+            <ul class="cards__list" role="list">
+                {% for item in products.scores.hymns | sort(false, true, 'name') %}
+                    <li class="cards__card" data-card data-url="{{ item.url | toRelativeUrl }}">
+                        <div class="cards__image">
+                            {% image item.images[0],
+                            "",
+                            sizes = "(max-width: 27.5em) 100vw, 5rem",
+                            widths = [315, 450, 625, 900] %}
+                        </div>
+                        <div class="cards__heading flow">
+                            <h3 class="cards__title">
+                                <a href="{{ item.url | toRelativeUrl }}">
+                                    {{ item.metadata.meta["hymn tune"] | upper }}
+                                </a>
+                            </h3>
+                            <p class="">{{ item.name | hymnSubtitle }}</p>
+                            <p class="clr-neutral-700 italic">“{{ item.metadata.meta["hymn titles"][0] }}”</p>
+                        </div>
+                        {# <div class="cards__body pt-0">
+                                <p class="mt-0">{{ item.description | truncate(50) }}</p>
+                            </div> #}
+                        <div class="cards__price">
+                            <p>{{ item.default_price | productPrice }}</p>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {# <ul role="list" class="mt flow columns3">
+                {% for item in products.scores.hymns | sort(false, true, 'name') %}
+                    <li class="flex-column flex-align-start" >
+                        <div class="pointer" data-card data-url="{{ item.url | toRelativeUrl }}">
+                            <h4>
+                                <a href="{{ item.url | toRelativeUrl }}">{{ item.metadata.meta["hymn tune"] | upper }}</a>
+                            </h4>
+                            <p class="clr-offwhite">{{ item.name | hymnSubtitle }}</p>
+                            <p class="clr-neutral-700 mt-0 italic">
+                                {% for title in item
+                                    .metadata
+                                    .meta["hymn titles"] %}
+                                    {% if loop.index != 1 %}
+                                        <br/>{% endif %}
+                                    <span>“{{ title }}”</span>
+                                {% endfor %}
+                            </p>
+                            <p class="mt-0 clr-offwhite">
+                                <span>{{ item.default_price | productPrice }}</span>
+                            </p>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul> #}
+        {# </div> #}
+    </div>
+    <div class="container">
+        {% include "partials/back-to-top.njk" %}
+    </div>
+</section>

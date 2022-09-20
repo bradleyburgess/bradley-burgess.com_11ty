@@ -1,0 +1,17 @@
+- name:  "about"
+  url:   "/about/"
+
+- name:  "music"
+  url:   "/music/"
+
+- name:  "dev"
+  url:   "/dev/"
+
+- name:  "services"
+  url:   "/services/"
+
+- name:  "shop"
+  url:   "/shop/"
+
+- name:  "contact"
+  url:   "/contact/"

@@ -1,0 +1,588 @@
+# =========================================================
+#   MUSIC SERVICES
+# =========================================================
+
+[ music ]
+heading = "Music services."
+id      = "music"
+
+# teaching: piano ----------------------------------------
+[[ music.items ]]
+title = "Teaching: Piano"
+image = "https://images.unsplash.com/photo-1513883049090-d0b7439799bf?w=1920"
+rate  = "$70 / hour"
+blurb = """Beginner to very advanced. Build technique and learn effective \
+practice strategies."""
+testimonials = ['piano1', 'piano2']
+copy = """
+I’ve been privileged to be able to study with some truly excellent teachers, and 
+I have a passion for sharing the knowledge that I’ve been given with others. I 
+have over a decade of teaching experience, and would love to talk to you about 
+starting lessons.
+
+The teacher-student relationship is the foundation for all learning, and I do 
+everything I can to build trust and create a safe environment for students. In 
+lessons with me, there are no silly questions or obvious answers — we all have 
+different strengths and backgrounds. I also do everything I can to be 
+accomodating and understanding; while I do have a studio policy, I do 
+understand that life happens, and sometimes things come up. Some weeks we can’t 
+practice as much as we want to, and sometimes we have to cancel lessons. That’s 
+ok.
+
+My long-term goal in teaching students is to make them independent. That’s why 
+I take every oppportunity to incorporate learning healthy technique and good 
+practice strategies into lessons. 
+
+I always offer a free 30-minute consultation. This is an opportunity to get to 
+know each other a little, for us both to see if it would be a good fit, and for 
+me to formulate an idea of what your (or your child’s) interests and goals are.
+"""
+
+[[ music.items.buttons ]]
+title = "book a free consultation"
+type  = "primary"
+url   = "https://calendly.com/bradleyburgess/free-consultation"
+[[ music.items.buttons ]]
+title = "get in touch"
+type  = "secondary"
+url   = "/contact/"
+
+[[ music.items.quickinfo ]]
+title   = "Skill Levels"
+content = "Beginner to Advanced"
+
+[[ music.items.quickinfo ]]
+title   = "Lesson duration"
+content = "30 min, 45 min, or 60 min"
+
+[[ music.items.quickinfo ]]
+title   = "Learning areas"
+content = """
+- Classical repertoire
+- Playing by ear
+- Pop
+- Technique
+- Practice strategies
+- Accompanying
+- Scales & chords
+"""
+
+
+# teaching: organ ----------------------------------------
+[[ music.items ]]
+title = "Teaching: Organ"
+image = "https://images.unsplash.com/photo-1515527658517-0a52764f2fdf?2=1920"
+rate  = "$70 / hour"
+testimonials = ['organ1', 'organ2']
+blurb = """Transition to the organ from the piano. Learn to play the organ with \
+expression. Hymn playing and liturgical improvisation.
+"""
+copy = """
+I’ve been privileged to be able to study with some truly excellent teachers, and 
+I have a passion for sharing the knowledge that I’ve been given with others. I 
+have over a decade of teaching experience, and would love to talk to you about 
+starting lessons.
+
+The teacher-student relationship is the foundation for all learning, and I do 
+everything I can to build trust and create a safe environment for students. In 
+lessons with me, there are no silly questions or obvious answers — we all have 
+different strengths and backgrounds. I also do everything I can to be 
+accomodating and understanding; while I do have a studio policy, I do 
+understand that life happens, and sometimes things come up. Some weeks we can’t 
+practice as much as we want to, and sometimes we have to cancel lessons. That’s 
+ok.
+
+My long-term goal in teaching students is to make them independent. That’s why 
+I take every oppportunity to incorporate learning healthy technique and good 
+practice strategies into lessons. 
+
+I always offer a free 30-minute consultation. This is an opportunity to get to 
+know each other a little, for us both to see if it would be a good fit, and for 
+me to formulate an idea of what your (or your child’s) interests and goals are.
+"""
+
+[[ music.items.buttons ]]
+title = "book a free consultation"
+type  = "primary"
+url   = "https://calendly.com/bradleyburgess/free-consultation"
+[[ music.items.buttons ]]
+title = "get in touch"
+type  = "secondary"
+url   = "/contact/"
+
+[[ music.items.quickinfo ]]
+title   = "Skill Levels"
+content = "Beginner to Advanced"
+
+[[ music.items.quickinfo ]]
+title   = "Lesson duration"
+content = "30 min, 45 min, or 60 min"
+
+[[ music.items.quickinfo ]]
+title   = "Learning areas"
+content = """
+- Organ repertoire
+- Hymn playing
+- Registration
+- Manual & pedal technique
+- Transitioning from the piano
+- Accompanying
+- Beginner improvisation
+"""
+
+[[ music.items.quickinfo ]]
+title   = "Lesson duration"
+content = "30 min, 45 min, or 60 min"
+
+
+# teaching: music theory & musicianship ------------------
+[[ music.items ]]
+title = "Teaching: Music Theory & Musicianship"
+image = "https://images.unsplash.com/photo-1605389173375-536da8b69691?2=1920"
+rate  = "$70 / hour"
+blurb = """Improve your understanding of the music you play. Improve your aural \
+skills so you can play by ear or improvise with more freedom. Basic conducting.
+"""
+copy = """
+I’ve been privileged to be able to study with some truly excellent teachers, and 
+I have a passion for sharing the knowledge that I’ve been given with others. I 
+have over a decade of teaching experience, and would love to talk to you about 
+starting lessons.
+
+The teacher-student relationship is the foundation for all learning, and I do 
+everything I can to build trust and create a safe environment for students. In 
+lessons with me, there are no silly questions or obvious answers — we all have 
+different strengths and backgrounds. I also do everything I can to be 
+accomodating and understanding; while I do have a studio policy, I do 
+understand that life happens, and sometimes things come up. Some weeks we can’t 
+practice as much as we want to, and sometimes we have to cancel lessons. That’s 
+ok.
+
+My long-term goal in teaching students is to make them independent. That’s why 
+I take every oppportunity to incorporate learning healthy technique and good 
+practice strategies into lessons. 
+
+I always offer a free 30-minute consultation. This is an opportunity to get to 
+know each other a little, for us both to see if it would be a good fit, and for 
+me to formulate an idea of what your (or your child’s) interests and goals are.
+"""
+
+[[ music.items.buttons ]]
+title = "book a free consultation"
+type  = "primary"
+url   = "https://calendly.com/bradleyburgess/free-consultation"
+[[ music.items.buttons ]]
+title = "get in touch"
+type  = "secondary"
+url   = "/contact/"
+
+[[ music.items.quickinfo ]]
+title   = "Skill Levels"
+content = "Beginner to Advanced"
+
+[[ music.items.quickinfo ]]
+title   = "Lesson duration"
+content = "30 min, 45 min, or 60 min"
+
+[[ music.items.quickinfo ]]
+title   = "Learning areas"
+content = """
+- Basic conducting
+- Ear training
+- Sight-reading
+- Harmony & theory
+- Performance analysis
+- College prep
+"""
+
+
+# teaching: creative hymn playing ------------------------
+[[ music.items ]]
+title = "Teaching: Creative Hymn Playing"
+image = "https://images.unsplash.com/photo-1554089554-7a3bdc318d3a?w=1920"
+rate  = "$70 / hour"
+blurb = """Learn to create your own hymn settings. Inspire better congregational \
+singing with interprative introductions, bridges, and reharmonized last verses.
+"""
+copy = """
+I’ve been privileged to be able to study with some truly excellent teachers, and 
+I have a passion for sharing the knowledge that I’ve been given with others. I 
+have over a decade of teaching experience, and would love to talk to you about 
+starting lessons.
+
+The teacher-student relationship is the foundation for all learning, and I do 
+everything I can to build trust and create a safe environment for students. In 
+lessons with me, there are no silly questions or obvious answers — we all have 
+different strengths and backgrounds. I also do everything I can to be 
+accomodating and understanding; while I do have a studio policy, I do 
+understand that life happens, and sometimes things come up. Some weeks we can’t 
+practice as much as we want to, and sometimes we have to cancel lessons. That’s 
+ok.
+
+My long-term goal in teaching students is to make them independent. That’s why 
+I take every oppportunity to incorporate learning healthy technique and good 
+practice strategies into lessons. 
+
+I always offer a free 30-minute consultation. This is an opportunity to get to 
+know each other a little, for us both to see if it would be a good fit, and for 
+me to formulate an idea of what your (or your child’s) interests and goals are.
+"""
+
+[[ music.items.buttons ]]
+title = "book a free consultation"
+type  = "primary"
+url   = "https://calendly.com/bradleyburgess/free-consultation"
+[[ music.items.buttons ]]
+title = "get in touch"
+type  = "secondary"
+url   = "/contact/"
+
+[[ music.items.quickinfo ]]
+title   = "Skill Levels"
+content = "Beginner to Advanced"
+
+[[ music.items.quickinfo ]]
+title   = "Lesson duration"
+content = "30 min, 45 min, or 60 min"
+
+[[ music.items.quickinfo ]]
+title   = "Learning areas"
+content = """
+- Creative introductions
+- Registration strategies
+- Bridges & modulations
+- Transposition
+- Making the text come alive
+- Basic composition
+"""
+
+
+# engraving & transcription ------------------------------
+[[ music.items ]]
+title = "Engraving & Transcription"
+image = "https://images.pexels.com/photos/248510/pexels-photo-248510.jpeg"
+rate  = "$50 / hour"
+blurb = """Have your hand-written or digital scores engraved. I use Lilypond \
+primarily, which guarantees future-proofed scores."""
+copy = """
+I offer transcription services for existing hand-written or digital scores. If
+you have a score that doesn't look that great, or you want a re-engraving of a
+public domain score, let's chat. I primarily use Lilypond, because it's
+future-proofed, extremely flexible, and — most importantly — free and open
+source. If you haven't heard of Lilypond, be sure to check it out.
+
+If you have audio that you want transcribed, I can probably help you with that 
+as well, if it's not too long. If you're just looking for chords or a lead 
+sheet, I can have that done in no time.
+"""
+
+[[ music.items.buttons ]]
+title = "get a quote"
+type  = "primary"
+url   = "/contact/"
+
+[[ music.items.quickinfo ]]
+title   = "Score types"
+content = "Digital or hand-written"
+
+[[ music.items.quickinfo ]]
+title   = "Format"
+content = "MuseScore or Lilypond"
+
+
+# commission a hymn setting ------------------------------
+[[ music.items ]]
+title = "Commission a hymn setting"
+image = "https://images.unsplash.com/photo-1518674660708-0e2c0473e68e?2=1920"
+rate  = "Contact for quote"
+blurb = """Commission your very own hymn setting: Voluntary / prelude, \
+postlude, or hymn accompaniment (introduction, last verse, etc.)
+"""
+copy = """
+If you are looking for a new hymn setting, but don't have the time, ability, 
+or inclination to write your own, I'd be happy to talk to you about 
+commissioning one. I have an existing (and growing!) 
+[collection of hymn settings](/shop), and if you'd like to see something 
+specific there, I'd love to hear about it. Take a listen to some of these, and 
+if you like what you hear, drop me a line!
+
+<ul class="grid cols2-even" role="list">
+  <li class="flow">
+    <p>DIADEMATA</p>
+    <audio 
+      controls 
+      controlslist="nodownload noplaybackrate" 
+      data-plyraudio
+      src="https://dl.dropboxusercontent.com/s/xezow14e2thj09g/hymn_diademeta.mp3?dl=0"
+    />
+  </li>
+  <li class="flow">
+    <p>NICAEA</p>
+    <audio 
+      controls 
+      controlslist="nodownload noplaybackrate" 
+      data-plyraudio
+      src="https://dl.dropboxusercontent.com/s/wf7gyhvyk0gjev0/hymn_nicaea.mp3?dl=0" 
+    />
+  </li>
+  <li class="flow">
+    <p>ROYAL OAK</p>
+    <audio 
+      controls 
+      controlslist="nodownload noplaybackrate" 
+      data-plyraudio
+      src="https://dl.dropboxusercontent.com/s/6d3spn6q89l34sc/hymn_royal-oak.mp3?dl=0" 
+    />
+  </li>
+  <li class="flow">
+    <p>WESTMINSTER ABBEY</p>
+    <audio 
+      controls 
+      controlslist="nodownload noplaybackrate" 
+      data-plyraudio
+      src="https://dl.dropboxusercontent.com/s/5m64zrkr91jiswu/hymn_westminster-abbey.mp3?dl=0" 
+    />
+  </li>
+</ul>
+"""
+
+[[ music.items.buttons ]]
+title = "let's chat"
+type  = "primary"
+url   = "/contact/"
+
+[[ music.items.quickinfo ]]
+title   = "Hymn settings"
+content = """
+- preludes
+- introductions
+- last verses
+- bridges
+"""
+
+
+
+
+# =========================================================
+#   DEVELOPMENT SERVICES
+# =========================================================
+
+[ development ]
+heading = "Development services."
+id      = "development"
+
+# new website --------------------------------------------
+[[ development.items ]]
+title = "New website"
+image = "https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=1920"
+rate  = "Contact for quote"
+testimonials = ["newsite1", "newsite2"]
+blurb = """Hire me to design and build a brand new website that is guaranteed to 
+be fast, accessible to most users, beautiful, and mobile-first."""
+copy = """
+I am passionate about building websites that are fast, responsive, accessible, 
+and ethical. (If you haven't yet, check out my short blurb on [ethical web design](/dev#ethical-web).
+
+I begin with getting a sense of who you are and what you're looking for in a 
+website. It's really important to nail down what features you need, as this
+sppeds things up later. It also helps me decide what kind of technology will 
+best suit your site. Are you mostly doing just a static site? A blog? 
+E-commerce? During this phase, I'll also ask you to send me links of things you 
+like in other sites — this could be designs, color pallettes, features, etc.
+
+Once we've established the overall design, sitemap and features, I move to 
+prototyping with [Figma](https://www.figma.com). Ths great thing about this 
+tool is that you can see what I'm doing live, which fascilitates collaboration 
+in this step.
+
+After that, it's time for coding! That is the fun part. (Well, for me.)
+
+<h2 class="fs-700 mt">A note on Wordpress</h2>
+
+Wordpress isn't my first choice for new websites, as I think there are way 
+better options that are more resilient, easier to maintain, and less prone to 
+security vulnerabilities. But, if you are adamant on having a Wordpress site, 
+I will absolutely work with you on it.
+"""
+
+[[ development.items.buttons ]]
+title = "book a free consultation"
+type  = "primary"
+url   = "https://calendly.com/bradleyburgess/free-consultation"
+[[ development.items.buttons ]]
+title = "get in touch"
+type  = "secondary"
+url   = "/contact/"
+
+[[ development.items.quickinfo ]]
+title = "Specialities"
+content = """
+- lightweight sites
+- blazing performance
+- custom designs & builds
+- accessibility
+"""
+
+# fix issues on existing website -------------------------
+[[ development.items ]]
+title = "Fix issues on an existing website"
+image = "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?w=1920"
+rate  = "$70 / hr"
+blurb = """Squash those pesky bugs on your website! Anything from weirdly-displaying 
+images to new features. I work with Wordpress, Squarespace, Wix — you name it."""
+copy = """
+If you have an existing site that has some issues, I'm almost certain I can 
+help. I can work with any site on any platform — whether it's Wordpress, Wix, 
+Squarespace, or something else.
+
+Perhaps you have an image that isn't quite showing right? Or maybe you can't 
+get that YouTube embed to appear. Or maybe a particular page is loading really
+slowly.
+
+Whatever it is, drop me a line, and we'll get it fixed. I am fluent in HTML, 
+CSS and Javascript, and those are the languages that every website is made from.
+"""
+
+[[ development.items.buttons ]]
+title = "book a free consultation"
+type  = "primary"
+url   = "https://calendly.com/bradleyburgess/free-consultation"
+[[ development.items.buttons ]]
+title = "get in touch"
+type  = "secondary"
+url   = "/contact/"
+
+[[ development.items.quickinfo ]]
+title = "Examples of issues"
+content = """
+- image optimization
+- diagnozing page speed
+- custom CSS
+- broken links
+- broken layouts
+"""
+
+# website audit ------------------------------------------
+[[ development.items ]]
+title = "Website audit"
+image = "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1920"
+rate  = "$70 / hr"
+blurb = """Have your website assess for performance, accessibility, and security. 
+Get a report of existing problems, areas for improvement, and proposed solutions."""
+copy = """
+A website audit can give you a handle on the strengths of your site as well as 
+areas that need improvement. I can assess a site's security, accessibility, 
+performance, search engine optimization (SEO), and adherence to modern best 
+practices.
+
+A security is particularly important if your website is built with Wordpress. 
+As powerful as it is, the Wordpress platform is notorious for security 
+vulnerabilities, such as SQL injection.
+
+An accessibility audit will give you an overview of how easily your site can be 
+navigated by the user — especially those with visual, auditory, or mobility 
+impairments.
+
+Performance / core web vitals auditing looks at how well the site performs. I
+check how well the site performs on slow connections, devices of varying sizes, 
+with Javascript disabled, and I check it with Google's standards for best 
+practices.
+"""
+
+[[ development.items.buttons ]]
+title = "book a free consultation"
+type  = "primary"
+url   = "https://calendly.com/bradleyburgess/free-consultation"
+[[ development.items.buttons ]]
+title = "get in touch"
+type  = "secondary"
+url   = "/contact/"
+
+[[ development.items.quickinfo ]]
+title = "Areas of audit"
+content = """
+- security
+- accessibility
+- performance
+- core web vitals
+- SEO
+"""
+
+# spreadsheets -------------------------------------------
+[[ development.items ]]
+title = "Spreadsheets"
+image = "https://images.unsplash.com/photo-1529078155058-5d716f45d604?w=1920"
+rate  = "$20 – $200"
+blurb = """Custom-built spreadsheets for catalogs, budgets, planning. Automation 
+and great user experience through advanced formulas."""
+copy = """
+Not all problems are best solved with yet another app or website. Some folks 
+love spreadsheets (me included!), and use it to manage their home budgets, 
+planning a trip, etc. I have spreadsheets with my repertoire, and I also use it
+for planning all my music at work.
+
+I can offer help with creating whole new spreadsheets that not only look great, 
+but are also great to work with. I can create advanced, custom formulas to help
+automate all the boring stuff — no more copy-pasting!
+"""
+
+[[ development.items.buttons ]]
+title = "book a free consultation"
+type  = "primary"
+url   = "https://calendly.com/bradleyburgess/free-consultation"
+[[ development.items.buttons ]]
+title = "get in touch"
+type  = "secondary"
+url   = "/contact/"
+
+[[ development.items.quickinfo ]]
+title = "Features"
+content = """
+- beautiful sheets
+- advanced, custom formulas
+- automation
+- SQL
+"""
+
+# personal online audit ----------------------------------
+[[ development.items ]]
+title = "Personal cybersecurity"
+image = "https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?w=1920"
+rate  = "$100"
+blurb = """Not sure how secure you are in the digital world? Let me help with 
+that. I can walk you through setting up a passoword manager, and doing other 
+cybersecurity housekeeping."""
+copy = """
+If you don't know much about tech and are concerned about how secure your
+accounts and password are, I can definitely help you secure your digital life.
+
+I can walk you through choosing and using a passowrd manager, making sure your
+accounts are as secure as possible, and minimizing your vulnerability online.
+
+Two-factor authentication (2FA) is also super important, but it can be confusing
+setting it up. Don't be confused; let me help!
+
+A Virtual Private Network (VPN) is also a good idea if you are concerned about
+privacy. It's especially useful and important when connected to a public wifi
+network, e.g. at the airport or a coffee shop.
+
+I won't touch any of your devices, but will instead guide you. This way you can
+be sure that your data remains safe and only touched by you.
+"""
+
+[[ development.items.buttons ]]
+title = "book a free consultation"
+type  = "primary"
+url   = "https://calendly.com/bradleyburgess/free-consultation"
+[[ development.items.buttons ]]
+title = "get in touch"
+type  = "secondary"
+url   = "/contact/"
+
+[[ development.items.quickinfo ]]
+title = "Offerings"
+content = """
+- setting up a password manager
+- setting up 2FA
+- using a VPN
+"""

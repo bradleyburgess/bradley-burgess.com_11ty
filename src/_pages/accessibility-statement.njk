@@ -1,0 +1,16 @@
+---
+layout: "layouts/base.njk"
+permalink: /accessibility-statement/
+title: Accessibility Statement
+---
+
+<div class="container">
+    <div class="container--md center">
+        <div class="constrain--lg markdown">
+            <h1 class="ta-center">{{ content.accessibilityStatement.heading }}</h1>
+            <div class="mt flow">
+                {{ content.accessibilityStatement.copy | markdown | safe }}
+            </div>
+        </div>
+    </div>
+</div>

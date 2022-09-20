@@ -1,0 +1,157 @@
+@use "variables" as *;
+.media-container {
+  --width: min(100%, 94.5rem);
+  width: var(--width);
+  position: relative;
+  left: calc((var(--width) - 100%) * -0.5);
+  display: grid;
+  place-items: center;
+  margin-bottom: 3rem;
+  z-index: 1;
+
+  // TODO: fix sticky
+  @media screen and (orientation: portrait) and (max-width: 25.875em) {
+    position: sticky;
+    top: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 100%; // calc(100% + var(--x-padding) * 8);
+    top: 10%;
+    background-color: $clr-neutral-300;
+    z-index: -2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 60%;
+    top: 20%;
+    width: 100%; // calc(100% + var(--x-padding) * 8);
+    z-index: -1;
+  }
+
+  &.youtube::after {
+    background: url("../img/backgrounds/filmstrip.png");
+    background-position: 10%;
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+  &.audio::after {
+    background: url("../img/backgrounds/soundwave.png");
+    background-position: 10%;
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+}
+
+.media-player {
+  --width: min(100%, 53.5rem);
+  width: var(--width);
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  @media screen and (max-width: 26.25em) {
+    position: relative;
+    width: 100vw;
+    left: -1rem;
+    max-width: 100vw;
+  }
+}
+
+.media-container.audio {
+  .media-player {
+    display: grid;
+    place-items: center;
+  }
+
+  .plyr__controls {
+    // override variables
+    --plyr-audio-controls-background: #{$clr-neutral-300};
+    --plyr-control-spacing: 0.5em;
+    --plyr-font-size-time: 1rem;
+    --plyr-range-fill-background: #{$clr-white};
+    --plyr-audio-control-background-hover: #{$clr-white};
+    --plyr-audio-control-color-hover: #{$clr-neutral-300};
+    --plyr-range-thumb-height: 1.25em;
+    color: $clr-white;
+
+    // main layout for container
+    display: grid;
+    place-items: center;
+    grid-template-areas:
+      "rw play play ff"
+      "seek seek seek time"
+      "vol vol vol vol";
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2em;
+    padding-inline: fluid-size(16, 128, 1024, 1600);
+    padding-block: fluid-size(16, 64, 1024, 1600);
+
+    @media screen and (min-width: 470px) {
+      border-radius: 2rem;
+    }
+
+    // PLAY BUTTON
+    .plyr__controls__item[data-plyr="play"] {
+      --plyr-control-spacing: 3em;
+      --plyr-control-icon-size: 4em;
+      grid-area: play;
+      margin-inline: auto;
+      border: 0.125em solid $clr-white;
+      border-radius: 50%;
+
+      &[aria-label="Play"] {
+        svg {
+          position: relative;
+          left: 0.375em;
+        }
+      }
+    }
+
+    // REWIND + FASTFORWARD BUTTON
+    .plyr__controls__item[data-plyr="rewind"],
+    .plyr__controls__item[data-plyr="fast-forward"] {
+      // border-radius: 50%;
+      // border: 2px solid $clr-white;
+      --offset: 0.3125em;
+      --plyr-control-icon-size: 3em;
+      --plyr-control-spacing: 2em;
+      border-radius: 50%;
+      svg {
+        position: relative;
+      }
+    }
+    .plyr__controls__item[data-plyr="rewind"] {
+      grid-area: rw;
+      svg {
+        right: var(--offset);
+      }
+    }
+    .plyr__controls__item[data-plyr="fast-forward"] {
+      grid-area: ff;
+      svg {
+        left: var(--offset);
+      }
+    }
+
+    // PROGRESS + TIME
+    .plyr__progress__container {
+      grid-area: seek;
+      width: 100%;
+    }
+    .plyr__time {
+      grid-area: time;
+    }
+
+    // VOLUME + MUTE
+    .plyr__volume {
+      grid-area: vol;
+      width: 100%;
+      max-width: unset;
+    }
+  }
+}

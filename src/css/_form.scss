@@ -1,0 +1,137 @@
+@use "variables" as *;
+
+.form {
+  --row-gap: 2rem;
+
+  --flow-space: 0.5rem;
+  display: grid;
+  @media screen and (min-width: 32.5em) {
+    row-gap: var(--row-gap);
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    place-items: center start;
+  }
+
+  &__label {
+    font-family: $ff-alternate;
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    @media screen and (max-width: 32.4375em) {
+      * + & {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .button__container {
+    margin-top: 2rem;
+  }
+
+  &__field {
+    width: 100%;
+    background-color: $clr-neutral-300;
+    border: 1px solid $clr-white;
+    border-radius: 0.625rem;
+    padding: 0.5rem;
+    color: $clr-white;
+  }
+
+  @media screen and (min-width: 25em) {
+    .break {
+      display: none;
+    }
+  }
+
+  textarea {
+    resize: none;
+    height: 7rem;
+  }
+
+  & > .small-gap {
+    @media screen and (min-width: 32.5em) {
+      margin-top: calc((var(--row-gap) - 1rem) * -1);
+    }
+  }
+
+  select {
+    appearance: none;
+    background: url("../img/icons/flat/angle-down.svg") no-repeat, $clr-neutral-300;
+    background-position: calc(100% - 0.65em);
+    background-size: 1em;
+    // &:focus {
+    //   background: url("../img/icons/flat/angle-up.svg") no-repeat;
+    //   background-position: calc(100% - 0.65em);
+    //   background-size: 1em;
+    // }
+  }
+
+  select::-ms-expand {
+    display: none; /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
+  }
+
+  option,
+  optgroup {
+    background-color: $clr-neutral-200;
+    font: inherit;
+  }
+}
+
+/*
+ *  CUSTOM CHECKBOX
+ */
+
+.form__label[data-variant="checkbox"] {
+  position: relative;
+  display: flex;
+  column-gap: 1.5em;
+  row-gap: 0.5em;
+  flex-wrap: wrap;
+  & input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: relative;
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1px solid $clr-white;
+    cursor: pointer;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid $clr-bg;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+
+  &:hover input ~ .checkmark {
+    background-color: $clr-neutral-400;
+  }
+
+  & input:focus-visible ~ .checkmark {
+    outline: 1px solid white;
+    outline-offset: 0.25em;
+    background-color: $clr-neutral-400;
+  }
+
+  & input:checked ~ .checkmark {
+    background-color: $clr-white;
+    &:after {
+      display: block;
+    }
+  }
+}

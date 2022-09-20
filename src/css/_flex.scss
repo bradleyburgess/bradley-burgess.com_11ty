@@ -1,0 +1,119 @@
+@use "variables" as *;
+
+.flex {
+  display: flex;
+  &-column {
+    @extend .flex;
+    flex-direction: column;
+  }
+  &-align-start {
+    @extend .flex;
+    align-items: flex-start;
+  }
+  &-align-center {
+    @extend .flex;
+    align-items: center;
+  }
+  &-justify-center {
+    @extend .flex;
+    justify-content: center;
+  }
+  &-justify-end {
+    @extend .flex;
+    justify-content: flex-end;
+  }
+  &-wrap {
+    @extend .flex;
+    flex-wrap: wrap;
+  }
+}
+
+.gap {
+  &-100 {
+    gap: 0.15rem;
+  }
+  &-200 {
+    gap: 0.3rem;
+  }
+  &-300 {
+    gap: 0.45rem;
+  }
+  &-400 {
+    gap: 0.6rem;
+  }
+  &-500 {
+    gap: 0.75rem;
+  }
+  &-600 {
+    gap: 0.9rem;
+  }
+  &-700 {
+    gap: 1.05rem;
+  }
+  &-800 {
+    gap: 1.2rem;
+  }
+  &-900 {
+    gap: 1.35rem;
+  }
+}
+
+.row-gap {
+  &-100 {
+    row-gap: 0.15rem;
+  }
+  &-200 {
+    row-gap: 0.3rem;
+  }
+  &-300 {
+    row-gap: 0.45rem;
+  }
+  &-400 {
+    row-gap: 0.6rem;
+  }
+  &-500 {
+    row-gap: 0.75rem;
+  }
+  &-600 {
+    row-gap: 0.9rem;
+  }
+  &-700 {
+    row-gap: 1.05rem;
+  }
+  &-800 {
+    row-gap: 1.2rem;
+  }
+  &-900 {
+    row-gap: 1.35rem;
+  }
+}
+
+.column-gap {
+  &-100 {
+    column-gap: 0.15rem;
+  }
+  &-200 {
+    column-gap: 0.3rem;
+  }
+  &-300 {
+    column-gap: 0.45rem;
+  }
+  &-400 {
+    column-gap: 0.6rem;
+  }
+  &-500 {
+    column-gap: 0.75rem;
+  }
+  &-600 {
+    column-gap: 0.9rem;
+  }
+  &-700 {
+    column-gap: 1.05rem;
+  }
+  &-800 {
+    column-gap: 1.2rem;
+  }
+  &-900 {
+    column-gap: 1.35rem;
+  }
+}

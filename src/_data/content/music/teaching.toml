@@ -1,0 +1,98 @@
+heading = "Teaching."
+id      = "teaching"
+
+copy = """
+I have over a decade of experience teaching the piano, the organ, music theory 
+and musicianship skills, and I would love to share that experience with you. 
+
+My teaching philosophy centers the student and their needs. No two students are 
+the same (even twins!), and every student has different aspirations, learning 
+styles, motivations, interests, and personalities. I tailor my teaching style 
+and what we cover to every student, considering their needs and goals. 
+
+Central to my approach is the principle of teaching the student, not the 
+subject. Therefore, the teacher-student relationship always comes first — 
+before deadlines, goals, or schedules.
+
+I am presently located in the Raleigh-Durham area in North Carolina, and am on 
+the faculty of Raleigh School of Music. I offer in-person private instruction 
+to students located in the Triangle area, but I also offer onlilne lessons, 
+and currently have a small studio of regular online students. If you are 
+interested in lessons, please don’t hesitate to reach out! Consultation is 
+free; I am always happy to chat. 
+
+I am currently offering support in these four main areas, but always tailor 
+instruction to the individual needs; I’m happy to cover a variety of mixed 
+topics.
+"""
+
+image    = "bradley/bradley-manuals.jpg"
+imageAlt = "Close up of Bradley's hands playing on the organ manuals"
+
+[[ cards ]]
+title       = "Piano"
+image       = "https://images.unsplash.com/photo-1513883049090-d0b7439799bf?w=1920"
+imageAlt    = ""
+description = "Beginner to advanced, repertoire and technique. How to practice."
+url         = "/services/teaching-piano/"
+
+
+
+[[ cards ]]
+title       = "Organ"
+image       = "https://images.unsplash.com/photo-1515527658517-0a52764f2fdf?2=1920"
+imageAlt    = ""
+description = """Registration. Hymn-playing. Transitioning to organ from piano."""
+url         = "/services/teaching-organ/"
+
+
+
+[[ cards ]]
+title       = "Music Theory & Musicianship"
+image       = "https://images.unsplash.com/photo-1605389173375-536da8b69691?2=1920"
+imageAlt    = ""
+description = "Harmony. Ear training. Analysis. Basic conducting."
+url         = "/services/teaching-music-theory-and-musicianship/"
+
+
+
+[[ cards ]]
+title       = "Creative Hymn Playing"
+image       = "https://images.unsplash.com/photo-1554089554-7a3bdc318d3a?w=1920"
+imageAlt    = ""
+description = "Reharmonization. Last verses. Bridges. Creating your own hymn settings."
+url         = "/services/teaching-creative-hymn-playing/"
+
+[[ testimonials ]]
+image  = "https://dl.dropboxusercontent.com/s/m1rf0mz5lln3v2x/toni.jpg?dl=0"
+author = "Toni M."
+type   = "Piano student"
+copy = """
+Bradley is an exceptional instructor. I have been playing the piano for \n
+over 50 years and he has taught me practicing techniques that I have never \n
+used before. His knowledge, and ability to share it with the student, is \n
+excellent. He is a gifted musician himself and helps inspire me to always \n
+improve. 
+"""
+
+[[ testimonials ]]
+image  = "https://dl.dropboxusercontent.com/s/5ffc13k9h3l3l9q/lisa.jpg?dl=0"
+author = "Lisa B."
+type   = "Organ student"
+copy = """
+Bradley is an outstanding organ teacher. What sets him apart is his broad \n
+knowledge of repertoire and technique combined with large doses of patience. \n
+I learn something new each time we meet!   I can't recommend him too highly.
+"""
+
+[[ testimonials ]]
+image  = "https://dl.dropboxusercontent.com/s/g1scnyujesmdtr6/robin.jpg?dl=0"
+author = "Robin D."
+type   = "Parent of a piano student"
+copy = """
+Bradley has been a fantastic piano teacher for our son. He's experienced, \n
+knowledgeable, and patient, as you would expect from any good teacher. But \n
+he's also remarkably insightful and flexible as he molds his instruction to \n
+our son's needs and strengths. Lessons are always really focused and at the \n
+same time super upbeat and positive.  
+"""

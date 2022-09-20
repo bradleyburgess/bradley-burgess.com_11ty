@@ -1,0 +1,67 @@
+# PIANO TESTIMONIALS ======================================== #
+
+- id:       "piano1"
+  image:    "https://dl.dropboxusercontent.com/s/m1rf0mz5lln3v2x/toni.jpg?dl=0"
+  author:   "Toni M."
+  subtitle: "Piano student"
+  copy: >-
+    Bradley is an exceptional instructor. I have been playing the piano for \n
+    over 50 years and he has taught me practicing techniques that I have never \n
+    used before. His knowledge, and ability to share it with the student, is \n
+    excellent. He is a gifted musician himself and helps inspire me to always \n
+    improve.
+
+- id:       "piano2"
+  image:    "https://dl.dropboxusercontent.com/s/g1scnyujesmdtr6/robin.jpg?dl=0"
+  author:   "Robin D."
+  subtitle: "Parent of a piano student"
+  copy: >-
+    Bradley has been a fantastic piano teacher for our son. He's experienced, \n
+    knowledgeable, and patient, as you would expect from any good teacher. But \n
+    he's also remarkably insightful and flexible as he molds his instruction to \n
+    our son's needs and strengths. Lessons are always really focused and at the \n
+    same time super upbeat and positive.
+
+# ORGAN TESTIMONIALS ======================================== #
+
+- id:       "organ1"
+  image:    "https://dl.dropboxusercontent.com/s/5ffc13k9h3l3l9q/lisa.jpg?dl=0"
+  author:   "Lisa B."
+  subtitle: "Organ student"
+  copy: >-
+    Bradley is an outstanding organ teacher. What sets him apart is his broad \n
+    knowledge of repertoire and technique combined with large doses of patience. \n
+    I learn something new each time we meet!   I can't recommend him too highly.
+
+- id: "organ2"
+  image:    "https://dl.dropboxusercontent.com/s/m1rf0mz5lln3v2x/toni.jpg?dl=0"
+  author:   "Toni M."
+  subtitle: "Organ student"
+  copy: >-
+    I had been playing the organ in church for years and wanted to learn more. 
+    Bradley has been patient and encouraging at every step along the way. He 
+    has been able to teach me techniques and tips that make playing the organ 
+    fun. Bradley's organ repertoire is impressive and his skill is amazing. He 
+    is the best instructor I have ever had.
+
+# DEV TESTIMONIALS ========================================== #
+
+- id:       "newsite1"
+  author:   "Jan T."
+  site:     "https://thisblogisaboutyou.com"
+  subtitle: "New website"
+  image:    "https://dl.dropboxusercontent.com/s/pw1k830qtj7twdf/jan.jpg?dl=0"
+  copy: >-
+    It's so easy for me to add content to my blog! I didn't have a clear idea of \
+    how I wanted it to look, but Bradley managed to take my few ideas and make it \
+    look really great. He also added new features I needed in record time. \
+
+- id:       "newsite2"
+  author:   "Kerri S."
+  site:     "https://brakdakkie.co.za"
+  subtitle: "New website"
+  image:    "https://dl.dropboxusercontent.com/s/zuh3j8aa5k7pzi4/kerri.jpg?dl=0"
+  copy: >-
+    All through the process Bradley amazed me. I'm so happy with how the redesigned \
+    site turned out. He is also so responsive and so quick to make changes. I \
+    couldn't be happier.

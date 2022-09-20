@@ -1,0 +1,61 @@
+@use "variables" as *;
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.bigger {
+  font-size: 1.25em;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.ff-body {
+  font-family: $ff-body;
+}
+
+.ff-alternate {
+  font-family: $ff-alternate;
+}
+
+.fs-100 {
+  font-size: 0.5rem;
+}
+.fs-200 {
+  font-size: 0.75rem;
+}
+.fs-300 {
+  font-size: 0.9rem;
+}
+.fs-400 {
+  font-size: 1rem;
+}
+.fs-500 {
+  font-size: 1.15rem;
+}
+.fs-600 {
+  font-size: 1.35rem;
+}
+.fs-700 {
+  font-size: 1.5rem;
+}
+.fs-800 {
+  font-size: 1.75rem;
+}
+.fs-900 {
+  font-size: 1.85rem;
+}

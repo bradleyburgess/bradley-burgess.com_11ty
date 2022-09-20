@@ -1,0 +1,48 @@
+heading = "Compositions."
+id      = "compositions"
+
+copy   = """
+I mostly write hymn settings for liturgical (i.e. not concert) use. These are 
+my most recent works, and you can find more by visiting the [shop](/shop).
+
+If you would like to commission a hymn setting, feel free to 
+[reach out to me](/contact).
+
+I do all my engraving in [Liliypond](https://lilypond.org), and self-publish 
+my scores on [Gumroad](https://bradleyburgess.gumroad.com).
+"""
+
+[[ works ]]
+title     = "MIT FREUDEN ZART"
+subtitle  = "Sing Praise to God"
+body      = "Introduction & Last Verse"
+image     = "https://public-files.gumroad.com/bdo0dgyidu59ov4sx041w309rbgq"
+imageAlt  = ""
+url       = "https://bradleyburgess.gumroad.com/l/mit-freuden-zart-intro-lastverse"
+
+
+[[ works ]]
+title     = "NICEA" 
+subtitle  = "Holy! Holy! Holy!"
+body      = "Introduction"
+image     = "https://public-files.gumroad.com/auqpyiqr7xj11fjrag05r5mjnv58"
+imageAlt  = ""
+url       = "https://bradleyburgess.gumroad.com/l/nicaea-introduction"
+
+
+[[ works ]]
+title    = "LOBE DEN HERREN"
+subtitle = "Praise to the Lord"
+body     = "Introduction, Bridge & Last Verse"
+image    = "https://public-files.gumroad.com/xgmj0zf9myhd2p95bcpigvhtgkv9"
+imageAlt = ""
+url      = "https://bradleyburgess.gumroad.com/l/lobe-den-herren-intro-last-verse"
+
+
+[[ works ]]
+title    = "FOREST GREEN"
+subtitle = "I Sing The Almighty Power of God"
+body     = "Introduction"
+image    = "https://public-files.gumroad.com/9x060kkw4fpr1vj78ohy1tuv22jn"
+imageAlt = ""
+url      = "https://bradleyburgess.gumroad.com/l/forest-green-introduction"

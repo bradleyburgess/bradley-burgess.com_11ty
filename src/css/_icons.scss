@@ -1,0 +1,72 @@
+@use "variables" as *;
+
+/*
+ *  Flat Icons
+ */
+
+$flat-icons: "arrow-left-solid", "arrow-right-solid", "arrow-up-solid", "cart", "css", "docker",
+  "eleventy", "external", "github", "html", "hygraph", "info", "javascript", "linux", "lock", "node",
+  "python", "scheme", "soundcloud", "star", "star-empty", "telegram", "twitter", "whatsapp",
+  "youtube";
+
+/*
+ *  Color Icons
+ */
+
+$color-icons: (
+  "digitalocean": "svg",
+  "eleventy": "svg",
+  "audacity": "svg",
+  "bash": "png",
+  "cloudflare": "svg",
+  "css": "svg",
+  "figma": "svg",
+  "html": "svg",
+  "hygraph": "svg",
+  "javascript": "svg",
+  "jitsimeet": "png",
+  "lilypond": "png",
+  "neovim": "svg",
+  "netlify": "svg",
+  "popos": "svg",
+  "python": "svg",
+  "react": "svg",
+  "sass": "svg",
+  "shotcut": "png",
+  "strapi": "svg",
+  "typescript": "svg",
+  "vscode": "svg",
+);
+
+.icon {
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+
+  // FLAT
+  &.flat {
+    @each $name in $flat-icons {
+      &.#{$name} {
+        background: url("../img/icons/flat/#{$name}.svg") no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  // COLOR
+  &.color {
+    @each $name, $ext in $color-icons {
+      &.#{$name} {
+        background: url("../img/icons/color/#{$name}.#{$ext}") no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+}
+
+.stars {
+  display: flex;
+  gap: 0.35em;
+  padding-top: 0.3em;
+}

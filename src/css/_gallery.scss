@@ -1,0 +1,12 @@
+@use "variables" as *;
+
+.gallery {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  & > .image {
+    width: calc((100% - 3rem) / 2);
+    min-width: 8.75rem;
+    max-width: 15.125rem;
+  }
+}

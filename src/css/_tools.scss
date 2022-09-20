@@ -1,0 +1,52 @@
+@use "variables" as *;
+
+.tools {
+  break-inside: avoid;
+  margin-bottom: 4rem;
+  &__list {
+    width: calc(100% + var(--x-padding) * 2);
+    position: relative;
+    left: calc(var(--x-padding) * -1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    // column-gap: 1rem;
+    row-gap: 2rem;
+
+    // @media screen and (max-width: 29.1875em) {
+    //   justify-content: flex-start;
+    // }
+  }
+  &__item {
+    display: grid;
+    place-items: center;
+    width: 7.75rem;
+    text-align: center;
+    grid-template-areas:
+      "image"
+      "title"
+      "description";
+  }
+  &__image {
+    display: grid;
+    place-items: center;
+    grid-area: image;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3.25rem;
+    background-color: $clr-neutral-300;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__title {
+    grid-area: title;
+    font-family: $ff-alternate;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  &__description {
+    grid-area: description;
+    font-size: 0.625rem;
+  }
+}

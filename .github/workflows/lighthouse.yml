@@ -1,0 +1,47 @@
+name: Lighthouse CI Workflow
+on: [push]
+jobs:
+  lighthouseci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        id: setup-node
+        with:
+          node-version: 14
+          cache: 'yarn'
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache dependencies
+        id: yarn-cache
+        uses: actions/cache@v3
+        env:
+          cache-name: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Cache build output
+        id: build-cache
+        uses: actions/cache@v3
+        env:
+          cache-name: build-cache
+        with:
+          path: dist
+          key: ${{ runner.os }}-build-cache
+
+      - name: Install dependencies
+        run: yarn && yarn global add @lhci/cli@0.9.x
+
+      - name: Build site
+        run: ANALYTICS_IMGSRC=${{ secrets.ANALYTICS_IMGSRC }} ANALYTICS_SCRIPTSRC=${{ secrets.ANALYTICS_SCRIPTSRC }} STRIPE_KEY=${{ secrets.STRIPE_KEY }} SERVER_URL_PROD=${{ secrets.SERVER_URL_PROD }} yarn build
+
+      - name: Run Lighthouse
+        run: lhci autorun

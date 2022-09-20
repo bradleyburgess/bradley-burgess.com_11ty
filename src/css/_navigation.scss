@@ -1,0 +1,49 @@
+@use "variables" as *;
+
+@media screen and (max-width: 58.25em) {
+  .js .burger-menu[enabled="true"][status="closed"] .navigation.main-nav ul {
+    display: none;
+  }
+}
+
+.navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 2rem;
+  padding: 0;
+}
+
+.navigation a {
+  position: relative;
+  text-decoration: none;
+  color: currentColor;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -3px;
+    left: 0;
+    background-color: $clr-white;
+    transform: scaleX(0);
+    transition: transform 0.15s ease-in-out;
+    transform-origin: left;
+  }
+  &:hover::after,
+  &:focus-visible::after {
+    transform: scaleX(1);
+  }
+  &[aria-current="page"]::after {
+    transition: none;
+    transform: scaleX(1);
+    height: 3px;
+  }
+}
+
+.no-js {
+  .main-nav-list {
+    row-gap: 1rem;
+  }
+}

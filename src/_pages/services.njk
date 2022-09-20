@@ -1,0 +1,84 @@
+---
+layout: "layouts/with-title.njk"
+permalink: /services/
+title: Services
+eleventyComputed:
+  secondaryNav:
+    - music
+    - development
+ogImage: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=1920"
+ogAlt: "null"
+description: "I am a freelance classicaly-trained music and web developer, available for hire."
+---
+
+{# MUSIC SERVICES SECTION ========================================= #}
+{% set current = content.services.music %}
+<section class="section" id="{{ current.id | lower | trim }}">
+    <div class="container">
+        <div class="flow center container--md">
+            <h2>{{ current.heading }}</h2>
+        </div>
+        <div class="container--md mt cards" data-variant="horizontal">
+            <ul class="cards__list" role="list">
+                {% for item in current.items %}
+                    <li class="cards__card" data-card data-url="/services/{{ item.title | slugify }}/">
+                        <div class="cards__image">
+                            {% image item.image,
+                            "",
+                            sizes = "(max-width: 27.5em) 100vw, 5rem",
+                            widths = [315, 450, 625, 900] %}
+                        </div>
+                        <div class="cards__heading">
+                            <h3 class="cards__title">
+                                <a href="/services/{{ item.title | slugify }}/">
+                                    {{ item.title }}
+                                </a>
+                            </h3>
+                        </div>
+                        <p class="cards__body">{{ item.blurb }}</p>
+                        <div class="cards__stack row-span2">
+                            <p>{{ item.rate }}</p>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% include "partials/back-to-top.njk" %}
+</section>
+
+{# DEVELOPMENT SERVICES SECTION =================================== #}
+{% set current = content.services.development %}
+<section class="section" id="{{ current.id | lower | trim }}">
+    <div class="container">
+        <div class="flow center container--md">
+            <h2>{{ current.heading }}</h2>
+        </div>
+        <div class="container--md mt cards" data-variant="horizontal">
+            <ul class="cards__list" role="list">
+                {% for item in current.items %}
+                    <li class="cards__card" data-card data-url="/services/{{ item.title | slugify }}/">
+                        <div class="cards__image">
+                            {% image item.image,
+                            "",
+                            sizes = "(max-width: 27.5em) 100vw, 5rem",
+                            widths = [315, 450, 625, 900] %}
+                        </div>
+                        <div class="cards__heading">
+                            <h3 class="cards__title">
+                                <a href="/services/{{ item.title | slugify }}/">
+                                    {{ item.title }}
+                                </a>
+                            </h3>
+                        </div>
+                        <p class="cards__body">{{ item.blurb }}</p>
+                        <div class="cards__stack row-span2">
+                            <p>{{ item.rate }}</p>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% include "partials/back-to-top.njk" %}
+</section>

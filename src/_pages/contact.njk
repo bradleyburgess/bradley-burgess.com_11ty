@@ -1,0 +1,90 @@
+---
+layout: "layouts/with-title.njk"
+title: Contact
+permalink: /contact/
+pageJs: contact
+description: >-
+  Whether you want to hire me, ask a question about something you’ve read here,
+  or just want to say hi — I’d love to hear from you.
+ogImage: "bradley/bradley-outside.jpg"
+ogAlt: >-
+  Bradley sitting outside on a beautiful day, leaning forward with
+  sunglasses on.
+---
+
+{% set current = content.contact.social %}
+<div class="container">
+    <div class="grid cols2-even wide-gap">
+        <div class="container--md flow">
+            <h2>{{ current.heading }}</h2>
+            <ul role="list" class="social__list">
+                {% for social in socialLinks.all %}
+                    <li>
+                        <div class="flex">
+                            <a href="{{ social.url }}" class="flex-align-center gap-300 fs-500 normal">
+                                <span class="fs-600 icon flat {{ social.name | lower }}"></span><span>{{ social.name }}</span>
+                            </a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+            <div class="image edge-to-edge mt-big constrain--md">
+                {% image current.image,
+                current.imageAlt,
+                loading = "eager",
+                widths = [
+                    400, 600, 800, 1200
+                ],
+                sizes = "(min-width: 64em) 29.5rem, (max-width: 41.25em) 100vw, 29.5rem" %}
+            </div>
+        </div>
+
+        {% set current = content.contact.form %}
+        <div class="container--md flow">
+            <h2>{{ current.heading }}</h2>
+            <div>
+                {{ current.copy | markdown | safe }}
+            </div>
+            <form action="{{ endpoints.contact }}" method="post" id="contact-form" class="mt-big flow form">
+                <input type="hidden" name="do_not_fill" aria-hidden>
+                <label for="form-name" class="form__label">Name</label>
+                <input type="text" name="name" id="form-name" class="form__field" required placeholder="Your name or alias">
+                <label for="form-email" class="form__label">Email</label>
+                <input type="email" name="email" id="form-email" class="form__field" required placeholder="you@example.com">
+                <label for="form-subject" class="form__label">Subject</label>
+                <select name="subject" id="form-subject" class="form__field" required>
+                    <optgroup label="General Enquiry">
+                        <option value="website-feedback">Website Feedback</option>
+                    </optgroup>
+                    <optgroup label="Shop">
+                        <option value="problem-with-purchase">Problem With Purchase</option>
+                    </optgroup>
+                    <optgroup label="Music Services">
+                        {% for item in content.services.music.items %}
+                            <option value="service-{{ item.title | slugify }}">{{ item.title }}</option>
+                        {% endfor %}
+                    </optgroup>
+                    <optgroup label="Development Services">
+                        {% for item in content.services.development.items %}
+                            <option value="service-{{ item.title | slugify }}">{{ item.title }}</option>
+                        {% endfor %}
+                    </optgroup>
+                </select>
+                <label for="form-message" class="form__label span2">Message</label>
+                <textarea name="message" id="form-message" class="form__field span2 small-gap" required placeholder="Please include a brief message 🙂"></textarea>
+                {# <label for="form-subscribe" class="form__label span2" data-variant="checkbox">Yes, sign me up for your newsletter! <input type="checkbox" name="subscribe" id="form-subscribe">
+                    <span class="checkmark"></span></label> #}
+                <label for="form-test" for="form-test" class="form__label span2">Are you a human? <br class="break"/>
+                    <p id="test-question" class="italic normal constrain--md">Pandas and piano keyboards have something in common: they're both…<span class="sr-only">something and something?</span></p>
+                </label>
+                <input type="text" name="test" id="form-test" class="form__field span2 small-gap" required placeholder="__________ & __________?">
+                <div class="button__container span2">
+                    <button type="submit" class="button primary">submit</button>
+                    <button class="button secondary" id="reset-form">reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script></script>

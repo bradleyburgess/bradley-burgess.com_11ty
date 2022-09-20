@@ -1,0 +1,102 @@
+---
+layout: "layouts/with-breadcrumb.njk"
+pagination:
+  data: products.all
+  size: 1
+  alias: product
+permalink: /{{ product.url | toRelativeUrl }}/
+backTo: /shop/
+backToLabel: shop
+pageJs: product
+eleventyComputed:
+  title: "{{ product.name }}"
+  description: "{{ product.description }}"
+  ogImage: "{{ product.images[0] }}"
+  ogAlt: "null"
+---
+
+<div class="container mt">
+    <div class="grid cols2-one-two switch">
+        <div class="container--md flow">
+            <h1 class="services__heading">{{ product.name }}</h1>
+            {{ product.description | markdown | safe }}
+            <p class="bold bigger">{{ product.default_price | productPrice }}</p>
+            <div class="mt button__container">
+                <form action="{{ endpoints.checkout }}" method="post">
+                    <input type="hidden" name="cart_items" value="{{ product.default_price.id }}">
+                    <button class="button primary" type="submit">buy now</button>
+                </form>
+                <cart-button product-id="{{ product.id }}">
+                    <button class="button secondary" disabled data-product="{{ product.id }}">
+                        <span class="button-text">add to cart</span></button>
+                </cart-button>
+                <div class="breadcrumb forward no-js-hidden">
+                    <a href="/shop/cart/">go to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="container--md flow">
+            <table class="table">
+                {% if product.metadata.genre %}
+                    <tr class="table__row">
+                        <th class="table__head">Genre:</th>
+                        <td class="table__cell">{{ product.metadata.genre | capitalize }}</td>
+                    </tr>
+                {% endif %}
+                {% for item in product.metadata.metaList %}
+                    <tr class="table__row">
+                        <th class="table__head">{{ item.key | title }}:</th>
+                        <td class="table__cell">
+                            {% if item.key === "hymn titles" %}
+                                <ul>
+                                    {% for title in item.value %}
+                                        <li>“{{ title }}”</li>
+                                    {% endfor %}
+                                </ul>
+                            {% elif item.key === 'difficulty' %}
+                                {{ item.value | toStars | safe }}
+                            {% elif item.key === 'hymn tune' %}
+                                {{ item.value | upper }}
+                            {% else %}
+                                {{ item.value }}
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+    {% if product.images %}
+        <div class="grid cols2-one-two mt">
+            <div></div>
+            <div class="container--md flow">
+                <div class="flow">
+                    <h2 class="ff-body fs-600">Sample Images</h2>
+                    <div class="gallery">
+                        {% for item in product.images %}
+                            <div class="image">
+                                {% image item,
+                            "sample image page" + loop.index,
+                            widths = [160, 242, 320, 484, null],
+                            sizes = "(max-width: 27em) 10rem, (max-width: 37.25em) 40vw, 15.125rem", 
+                            galleryImg = true %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% if product.metadata.audio %}
+                    <div class="flow mt">
+                        <h2 class="ff-body fs-600">Sample Audio</h2>
+                        <div class="constrain--sm">
+                            <audio 
+                                controls 
+                                controlslist="nodownload noplaybackrate" 
+                                data-plyraudio
+                                src="{{ product.metadata.audio }}"></audio>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+</div>

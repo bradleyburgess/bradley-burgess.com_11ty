@@ -1,0 +1,9 @@
+---
+layout: "layouts/base.njk"
+---
+
+<div class="container container--md breadcrumb">
+    <a href="{{ backTo }}{% if backToSection %}#{{ backToSection }}{% endif %}">back to {{ backToLabel }}</a>
+</div>
+
+{{ content | safe }}

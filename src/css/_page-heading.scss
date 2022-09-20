@@ -1,0 +1,26 @@
+@use "variables" as *;
+
+.page-heading {
+  --separator-height: 0.125rem;
+  --margin-bottom: #{fluid-size(120, 320, 360, 1600)};
+  margin-bottom: calc(var(--margin-bottom) * 0.25);
+  h1 {
+    position: relative;
+    width: 100%;
+    font-family: $ff-body;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 64em) {
+      @include separator(calc(50% + var(--separator-height, 0.125rem)));
+    }
+  }
+  span {
+    position: relative;
+    background-color: $clr-bg;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}

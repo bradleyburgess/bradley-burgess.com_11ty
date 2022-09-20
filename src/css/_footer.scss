@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+.footer {
+  --flow-space: 0.25em;
+  display: grid;
+  place-items: flex-end center;
+  min-height: var(--footer-min-height);
+  padding: var(--footer-padding, 1rem) 0;
+  text-align: center;
+  .copyright {
+    font-size: 1rem;
+  }
+
+  .social-links ul {
+    font-size: 1.35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+}

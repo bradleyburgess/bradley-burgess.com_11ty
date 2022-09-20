@@ -1,0 +1,191 @@
+---
+layout: "layouts/with-title.njk"
+permalink: /music/
+title: Music
+eleventyComputed:
+  secondaryNav:
+    - biography
+    - video
+    - audio
+    - compositions
+    - teaching
+pageJs: music
+ogImg: 'bradley/bradley-headshot4.jpg'
+ogAlt: 'Bradley, smiling in front of the organ'
+description: >-
+  Praised for his “virtuoso piano playing” and his ability to leave audiences
+  “spellbound”, Bradley Burgess is one of today’s few concert artists who can 
+  move seamlessly between the piano bench and organ console.
+---
+
+{# BIOGRAPHY SECTION ============================================== #}
+{% set current = content.music.biography %}
+<section class="section" id="{{ current.id | lower | trim }}">
+    <div class="container">
+        <div class="grid cols2-one-two switch">
+            <div class="flow container--md">
+                <h2>{{ current.heading }}</h2>
+                {% markdown %}{{ current.copy | safe }}{% endmarkdown %}
+            </div>
+            <div class="container--md img--full-height edge-to-edge">
+                {% image current.image,
+                current.imageAlt,
+                loading = "eager",
+                sizes="(max-width: 40.75em) 100vw, (max-width: 63.9375em) 39.25rem, (max-width: 84.875em) 31vw, 25.75rem" %}
+            </div>
+        </div>
+    </div>
+    {% include "partials/back-to-top.njk" %}
+</section>
+
+{# VIDEO SECTION ================================================== #}
+{% set current = content.music.video %}
+<section class="section" id="{{ current.id | lower | trim }}">
+    <div class="container">
+        <div class="flow container--md">
+            <h2>{{ current.heading }}</h2>
+            {# TODO: Fix sticky #}
+            <play-list type="youtube">
+                <div class="playlist">
+                    {% createPlaylist current.tracks,
+                    "youtube" %}
+                </div>
+            </play-list>
+            <p class="playlist__more">For more videos, go to my <a href="{{ socialLinks.all.YouTube }}">YouTube channel</a> (and subscribe!)</p>
+        </div>
+    </div>
+    {% include "partials/back-to-top.njk" %}
+</section>
+
+{# AUDIO SECTION ================================================== #}
+{% set current = content.music.audio %}
+<section class="section" id="{{ current.id | lower | trim }}">
+    <div class="container">
+        <div class="flow container--md">
+            <h2>{{ current.heading }}</h2>
+            <play-list type="audio">
+                <div class="playlist">
+                    {% createPlaylist current.tracks %}
+                </div>
+            </play-list>
+        </div>
+    </div>
+    {% include "partials/back-to-top.njk" %}
+</section>
+
+{# COMPOSITIONS SECTION =========================================== #}
+{% set current = content.music.compositions %}
+<section class="section" id="{{ current.id | lower | trim }}">
+    <div class="container">
+        <div class="flow container--md">
+            <h2>{{ current.heading }}</h2>
+            <div class="grid cols2-one-two">
+                <div>
+                    {% markdown %}{{ current.copy | safe }}{% endmarkdown %}
+                </div>
+                <div class="cards">
+                    <ul class="cards__list" role="list">
+                        {% for item in products.scores.all | getFirst(4) | sort(false, true, 'created') %}
+                            <li class="cards__card" data-card data-url="{{ item.url | toRelativeUrl }}">
+                                <div class="cards__text flow">
+                                    <div class="cards__heading">
+                                        <h3 class="cards__title">
+                                            <a href="{{ item.url | toRelativeUrl }}">{{ item.name }}</a>
+                                        </h3>
+                                        <p class="cards__subtitle">for {{ item.metadata.instrumentation }}</p>
+                                    </div>
+                                    <p class="cards__body">{{ item.description | truncate(40) }}</p>
+                                </div>
+                                <div class="cards__image">
+                                    {% image item.images | first,
+                                    "",
+                                    sizes="(max-width: 23.75em) 7.25rem, 10rem", 
+                                    widths=[100, 125, 150, 200, 250, 300] %}
+                                </div>
+                            </li>
+                        {% endfor %}
+                        <li class="cards__card" data-variant="empty" data-card data-url="/shop/">
+                            <div class="cards__text">
+                                <a href="/shop/">vist the shop</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "partials/back-to-top.njk" %}
+</section>
+
+{# TEACHING SECTION =============================================== #}
+{% set current = content.music.teaching %}
+<section class="section" id="{{ current.id | lower | trim }}">
+    <div class="container">
+        <div class="container--md">
+            <h2>{{ current.heading }}</h2>
+        </div>
+        <div class="grid cols2-two-one">
+            <div class="flow container--md">
+                {% markdown %}{{ current.copy | safe }}{% endmarkdown %}
+                <div class="cards mt">
+                    <ul class="cards__list" role="list">
+                        {% for item in current.cards %}
+                            <li class="cards__card" data-card data-url="{{ item.url }}">
+                                <div class="cards__text flow">
+                                    <div class="cards__heading">
+                                        <h3 class="cards__title">
+                                            <a href="{{ item.url }}">
+                                                {{ item.title }}
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p class="cards__body">{{ item.description }}</p>
+                                </div>
+                                <div class="cards__image">
+                                    {% image item.image,
+                                    item.imageAlt, 
+                                    sizes="(max-width: 23.75em) 7.25rem, 10rem", 
+                                    widths=[100, 125, 150, 200, 250, 300] %}
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="container--md img--full-height edge-to-edge">
+                {% image current.image,
+                current.imageAlt,
+                sizes="(max-width: 40.75em) 100vw, (max-width: 63.9375em) 39.25rem, (max-width: 84.875em) 31vw, 25.75rem" %}
+            </div>
+        </div>
+        <div class="center mt container--md">
+            <h3 class="sr-only">Testimonials.</h3>
+            <div class="mt">
+                {% set currentTestimonials = content.testimonials | filterByKey('id', ['piano1', 'organ1', 'piano2']) %}
+                {% include "partials/testimonials.njk" %}
+            </div>
+            {# <div class="testimonials mt">
+                <ul role="list" class="testimonials__list">
+                    {% for item in current.testimonials %}
+                        <li class="testimonials__item flow">
+                            <div class="testimonials__avatar">
+                                {% image item.image,
+                                "",
+                                sizes = "5.25em",
+                                widths = [84, 168, 336, 500] %}
+                            </div>
+                            <div class="testimonials__heading">
+                                <p class="testimonials__author">{{ item.author }}</p>
+                                <p class="testimonials__subtitle">{{ item.type }}</p>
+                            </div>
+                            <div class="testimonials__body">
+                                <p>{{ item.copy | trim }}</p>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div> #}
+        </div>
+    </div>
+    {% include "partials/back-to-top.njk" %}
+</section>

@@ -1,0 +1,16 @@
+@use "variables" as *;
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.ta-center--lg {
+  @media screen and (min-width: 64em) {
+    text-align: center;
+  }
+}
+
+.ta-center {
+  text-align: center;
+}

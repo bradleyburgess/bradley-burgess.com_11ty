@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+.jumbo {
+  width: 100%;
+  &__heading {
+    font-family: $ff-alternate;
+    font-weight: 400;
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+    max-width: 30ch;
+  }
+
+  @media screen and (min-width: 64em) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: clamp(62px, calc((62px + (100vw - 64em) * 0.256944444)), 148px);
+    & * {
+      text-align: right;
+    }
+  }
+}

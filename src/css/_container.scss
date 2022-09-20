@@ -1,0 +1,36 @@
+@use "variables" as *;
+
+.container {
+  width: min(var(--container-width), calc(100% - (var(--x-padding)) * 2));
+  margin-inline: auto;
+}
+
+.container--md {
+  @media screen and (max-width: 63.9375em) {
+    max-width: 39.25rem; //38.4375rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+.img-container {
+  max-width: min(100%, 39.25em);
+}
+
+.img--full-height {
+  img,
+  picture {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 26.25em) {
+  .edge-to-edge {
+    position: relative;
+    width: calc(100% + (var(--x-padding) * 2));
+    max-width: 100vw;
+    left: calc(var(--x-padding) * -1);
+  }
+}

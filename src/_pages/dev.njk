@@ -1,0 +1,205 @@
+---
+layout: "layouts/with-title.njk"
+permalink: /dev/
+title: Dev
+eleventyComputed:
+  secondaryNav:
+    - what I do
+    - portfolio
+    - ethical web
+    - other projects
+    - my tools
+ogImage: 'bradley/bradley-thinking.jpg'
+ogAlt: 'Bradley deep in thought in front of his laptop.'
+description: >-
+  I am a freelance web developer, and my main interest is in working towards a
+  more ethical web. In my work, I prioritize accessibility for all users,
+  performance, speed, and following best practices.
+---
+
+{# WHAT I DO SECTION ============================================== #}
+{% set current = content.dev.whatido %}
+<section class="section" id="{{ current.id | lower | trim }}">
+    <div class="container">
+        <div class="grid cols2-even">
+            <div class="flow container--md">
+                <h2>{{ current.heading }}</h2>
+                {% markdown %}{{ current.copy | safe }}{% endmarkdown %}
+            </div>
+            <div class="flow container--md">
+                <h3 class="sr-only">Testimonials.</h3>
+                {% set currentTestimonials = content.testimonials | filterByKey('id', ['newsite1', 'newsite2']) %}
+                {% include "partials/testimonials.njk" %}
+                {# <div class="testimonials">
+                    <ul role="list" class="testimonials__list">
+                        {% for item in current.testimonials %}
+                            <li class="testimonials__item flow">
+                                <div class="testimonials__avatar">
+                                    {% image item.image,
+                                    "",
+                                    sizes = "5.25em",
+                                    widths = [84, 168, 336, 500] %}
+                                </div>
+                                <div class="testimonials__heading">
+                                    <p class="testimonials__author">{{ item.author }}</p>
+                                    <p class="testimonials__subtitle">{{ item.site | noProto }}</p>
+                                </div>
+                                <div class="testimonials__body">
+                                    <p>{{ item.copy | trim }}</p>
+                                </div>
+                            </li>
+
+                        {% endfor %}
+                    </ul>
+                </div> #}
+            </div>
+        </div>
+    </div>
+    {% include "partials/back-to-top.njk" %}
+</section>
+
+{# PORTFOLIO SECTION ============================================== #}
+{% set current = content.dev.portfolio %}
+<section class="section" id="{{ current.id | lower | trim }}">
+    <div class="container">
+        <div class="flow container--md">
+            <h2>{{ current.heading }}</h2>
+            <div class="mt">
+                <div class="cards" data-variant="large">
+                    <ul class="cards__list" data-variant="flex-start" role="list">
+                        {% for item in current.items %}
+                            <li class="cards__card" data-card data-url="{{ item.url }}">
+                                <div class="cards__text flow">
+                                    <div class="cards__heading">
+                                        <h3 class="cards__title">
+                                            <a href="{{ item.url }}">{{ item.title }}</a>
+                                        </h3>
+                                        <p class="cards__subtitle">{{ item.url | noProto }}</p>
+                                    </div>
+                                    <p class="cards__body">{{ item.description }}. 
+                                        {# TODO: Add pages for each project with descriptions, details, etc. #}{# <span class="float-right">read more</span> #}</p>
+                                </div>
+                                <div class="cards__image">
+                                    {% image item.image,
+                                    "",
+                                    sizes = "19.75rem",
+                                    widths = [316, 632] %}
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "partials/back-to-top.njk" %}
+</section>
+
+{# ETHICAL WEB SECTION ============================================ #}
+{% set current = content.dev.ethicalweb %}
+<section class="section" id="{{ current.id | lower | trim }}">
+    <div class="container">
+        <div class="flow container--md">
+            <h2>{{ current.heading }}</h2>
+            <div class="columns2 flow">
+                {% markdown %}{{ current.copy | safe }}{% endmarkdown %}
+            </div>
+        </div>
+    </div>
+    {% include "partials/back-to-top.njk" %}
+</section>
+
+{# OTHER PROJECTS SECTION ========================================= #}
+{% set current = content.dev.otherprojects %}
+<section class="section" id="{{ current.id | lower | trim }}">
+    <div class="container">
+        <div class="flow container--md center ta-center--lg">
+            <div class="constrain--lg">
+                <h2>{{ current.heading }}</h2>
+                <div class="flow">
+                    {% markdown %}{{ current.copy | safe }}{% endmarkdown %}
+                </div>
+            </div>
+        </div>
+        <div class="container--md mt cards" data-variant="horizontal">
+            <ul class="cards__list" role="list">
+                {% for item in current.items %}
+                    <li class="cards__card">
+                        <div class="cards__image">
+                            {% image item.image,
+                            "",
+                            sizes = "(max-width: 27.5em) 100vw, 5rem",
+                            widths = [315, 450, 625, 900] %}
+                        </div>
+                        <div class="cards__heading">
+                            <h3 class="cards__title">{{ item.title }}</h3>
+                        </div>
+                        <p class="cards__body">{{ item.description }}</p>
+                        <div class="cards__stack">
+                            <ul role="list" class="stack__list">
+                                {% for item in item.stack %}
+                                    <li>
+                                        <span class="icon flat {{ item }}"></span>
+                                        <span>{{ item }}</span>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="cards__links">
+                            {% if item.external %}
+                                <div class="cards__link">
+                                    <a href="{{ item.external }}" title="External Link">
+                                        <span class="sr-only">External Link</span>
+                                        <span class="icon flat external"></span></a>
+                                </div>
+                            {% endif %}
+                            <div cards__link>
+                                <a href="{{ item.github }}" title="GitHub Repo">
+                                    <span class="icon flat github"></span>
+                                    <span class="sr-only">Github Link</span></a>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% include "partials/back-to-top.njk" %}
+</section>
+
+{# MY TOOLS SECTION =============================================== #}
+{% set current = content.dev.mytools %}
+<section class="section" id="{{ current.id | lower | trim }}">
+    <div class="container">
+        <div class="flow container--md">
+            <h2>{{ current.heading }}</h2>
+            <div class="flow">
+                {% markdown %}{{ current.copy | safe }}{% endmarkdown %}
+            </div>
+        </div>
+        <div class="columns2 mt container--md">
+            {% for section in['development', 'languages', 'music'] %}
+                {% set section = content
+                    .dev
+                    .mytools[section] %}
+                <div class="tools">
+                    <h3>{{ section.heading }}</h3>
+                    <ul class="tools__list">
+                        {% for item in section.tools %}
+                            <li class="tools__item">
+                                <div class="tools__image">
+                                    <span class="icon color {{ item.class }}"></span>
+                                </div>
+                                <span class="tools__title">{{ item.title }}</span>
+                                {% if item.description %}
+                                    <span class="tools__description">{{ item.description }}</span>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% include "partials/back-to-top.njk" %}
+</section>

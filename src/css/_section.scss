@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+.section {
+  --section-padding: #{fluid-size(120, 320, 360, 1600)};
+  // margin-top: calc(var(--section-padding) * 0.25);
+  $top: calc(((var(--section-padding) * 0.5) - (var(--separator-height) * 0.5)) * -1);
+  $separator-width: 30rem;
+  position: relative;
+  & + & {
+    margin-top: var(--section-padding, 2rem);
+    @include separator($top, $separator-width);
+  }
+}

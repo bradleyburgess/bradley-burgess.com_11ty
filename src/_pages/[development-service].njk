@@ -1,0 +1,73 @@
+---
+layout: "layouts/with-breadcrumb.njk"
+pagination:
+  data: content.services.development.items
+  size: 1
+  alias: service
+permalink: /services/{{ service.title | slugify }}/
+backToSection: development
+backTo: /services/
+backToLabel: services
+serviceType: development
+eleventyComputed:
+  title: "{{ service.title }}"
+  description: "{{ service.blurb }}"
+  ogImage: "{{ service.image }}"
+  ogAlt: "null"
+---
+
+{# {% include "partials/service.njk" %} #}
+<div class="container mt">
+  <div class="grid cols2-one-two switch">
+    <div class="container--md flow">
+      <h1 class="services__heading">{{ service.title }}</h1>
+      {{ service.copy | markdown | safe }}
+      <div class="mt button__container">
+        {% for item in service.buttons %}
+          <a href="{{ item.url }}" class="button {{ item.type }}">{{ item.title }}</a>
+        {% endfor %}
+      </div>
+      {% if service.testimonials.length %}
+        <div class="mt-big">
+          <h2 class="fs-700 ff-alternate">What people are saying</h2>
+          <div class="mt-big">
+          {% endif %}
+          {% set currentTestimonials = content.testimonials | filterByKey('id', service.testimonials) %}
+          {% include "partials/testimonials.njk" %}
+          {% if service.testimonials.length %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+    <div class="container--md flow">
+      {% image service.image,
+      "",
+      sizes="(max-width: 41.25em) 100vw, (max-width: 63.9375em) 39.25rem, (max-width: 83.25em) 31vw, 25.75rem" %}
+      <h2 class="fs-700 ff-alternate">Service Info</h2>
+      <table class="table">
+        <tr class="table__row">
+          <th class="table__head">Rate:</th>
+          <td class="table__cell">{{ service.rate }}</td>
+        </tr>
+        {% for item in service.quickinfo %}
+          <tr class="table__row">
+            <th class="table__head">{{ item.title }}:</th>
+            <td class="table__cell">{% markdown %}{{ item.content | safe }}{% endmarkdown %}</td>
+          </tr>
+        {% endfor %}
+      </table>
+      <div class="mt">
+        <h3>Other {{ serviceType | capitalize }} Services:</h3>
+        <ul>
+          {% for item in content
+            .services[serviceType]
+            .items | otherServices(service) %}
+            <li>
+              <a href="/services/{{ item.title | slugify }}/">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

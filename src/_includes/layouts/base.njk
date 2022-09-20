@@ -1,0 +1,128 @@
+{# Set Document Title #}
+{% if title %}{% set docTitle = title + " | Bradley Burgess" %}
+{% else %}{% set docTitle = sitemeta.title %}
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+
+        {# Google Fonts #}
+        {% include "partials/googlefonts.njk" %}
+
+        {# Other Meta #}
+        <meta name="generator" content="{{ sitemeta.generator }}">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ docTitle }}</title>
+        <meta name="description" content="{{ description or sitemeta.description }}">
+        {% ogmeta docTitle,
+        page.url,
+        description %}
+        {% ogimage ogImg or sitemeta.ogImg, ogAlt or sitemeta.ogAlt %}
+
+        {# Main Css and JS #}
+        <link rel="stylesheet" href="/assets/css/index{{ hash.css.index }}.css" media="screen">
+        <script src="/assets/js/index{{ hash.js.index }}.js" defer></script>
+        {% if pageJs %}
+            <script src="/assets/js/{{ pageJs }}{{ hash.js[pageJs] }}.js" defer></script>
+        {% endif %}
+
+        {# Google Fonts Styles #}
+        <style>
+            {% include "partials/googlefonts.css" %}
+        </style>
+
+        {# Detect Javascript #}
+        <script>
+            document
+                .documentElement
+                .classList
+                .replace('no-js', 'js')
+        </script>
+
+        {# Favicon #}
+        {% favicons "src/img/favicon.svg" %}
+
+    </head>
+    <body>
+        {# Skip Link #}
+        <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
+
+        {# Header ===================================================================== #}
+        <header class="site-head" role="banner">
+            <div class="container">
+                <div class="site-head__inner">
+                    <a href="/" class="site-head__brand">
+                        <span class="title">Bradley Burgess</span>
+                        <span class="separator"> | </span>
+                        <span class="tagline">musician & developer</span>
+                    </a>
+                    <burger-menu max-width="900">
+                        <nav class="navigation main-nav" aria-label="main">
+                            <p class="hidden">Main Navigation</p>
+                            <ul class="main-nav-list" role="list">
+                                {% for item in navigation %}
+                                    <li>
+                                        <a href="{{ item.url }}" 
+                                            {% if page.url === item.url %}
+                                            aria-current="page"
+                                            {% endif %}
+                                        >
+                                            {{ item.name }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </nav>
+                    </burger-menu>
+                </div>
+            </div>
+        </header>
+
+        {# Main Content =============================================================== #}
+        <main id="main">
+            {{ content | safe }}
+        </main>
+
+        {# Footer ===================================================================== #}
+        <footer class="footer">
+            <div class="container flow">
+                <nav class="social-links" aria-label="social links">
+                    <p class="hidden">Social Links</p>
+                    <ul role="list">
+                        {% for item in socialLinks.footer %}
+                            <li>
+                                <a href="{{ item.url }}">
+                                    <span class="icon flat {{ item.name | lower }}"></span>
+                                    <span class="sr-only">{{ item.name }}</span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+                <nav aria-label="footer">
+                    <ul role="list" class="flex-justify-center gap-600 fs-200 uppercase clr-neutral-900">
+                        <li>
+                            <a href="/privacy-policy/">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="/accessibility-statement/">Accessibility Statement</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright">Copyright © {{ year }} Bradley Burgess.</p>
+            </div>
+        </footer>
+
+        {# Shynet Analytics #}
+        {% if analytics.enabled and NODE_ENV === 'production' %}
+            <noscript>
+                <img src="{{ analytics.imgSrc }}">
+            </noscript>
+            <script defer src="{{ analytics.scriptSrc }}"></script>
+        {% endif %}
+    </body>
+</html>

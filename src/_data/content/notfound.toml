@@ -1,0 +1,25 @@
+video      = "/assets/video/david.mp4"
+videoTrack = "/assets/video/david.vtt"
+
+copy = """
+## Um… Yikes.
+
+It seems you've tried to access a page that doesn't exist. 
+
+Perhaps it was a typo? Perhaps it's a broken link? If it's the latter, take a
+second to [let me know](/contact/).
+
+Either way, might we suggest one of these?
+"""
+
+[[ links ]]
+text = "Check out my services."
+url  = "/services/"
+
+[[ links ]]
+text = "Explore my music."
+url  = "/music/"
+
+[[ links ]]
+text = "Read more about me."
+url  = "/about/"

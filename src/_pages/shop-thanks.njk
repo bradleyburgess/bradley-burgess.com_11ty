@@ -1,0 +1,37 @@
+---
+layout: "layouts/with-title.njk"
+permalink: /shop/thanks/
+title: Thanks
+---
+
+<div class="container">
+    <div class="grid cols2-even">
+        <div class="container--md">
+            <video autoplay muted loop controls data-gif="true">
+                <source src="/assets/video/thank-you.mp4" type="video/mp4">
+                <track kind="descriptions" src="/assets/video/thank-you.vtt" srclang="en"/>
+            </video>
+        </div>
+        <div class="container--md markdown flow flex-justify-center">
+            <div class="flow">
+                <p class="fs-700">Thanks for your order!</p>
+                <p class="mt">You should be getting two separate emails:</p>
+                <ol>
+                    <li>a receipt from Stripe with your order details</li>
+                    <li>an email from me with the download link(s)</li>
+                </ol>
+
+                <p class="underline">Please note: the download links will expire after 7 days</p>
+                <p>If you don't receive either email, please check your junk folder.</p>
+                <p>If you have any trouble, please contact me via <br/>
+                    <a href="/contact/">the contact form</a>, or at:</p>
+                <p>hello [at] bradley-burgess [dot] com</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    localStorage.setItem('cart', '');
+</script>

@@ -1,0 +1,28 @@
+---
+layout: "layouts/with-title.njk"
+permalink: /404.html
+title: "Oops!"
+---
+
+<div class="container">
+    <div class="grid cols2-even">
+        <div class="container--md">
+            <video autoplay muted loop controls data-gif="true">
+                <source src="{{ content.notfound.video }}" type="video/mp4">
+                <track kind="descriptions" src="{{ content.notfound.videoTrack }}" srclang="en"/>
+            </video>
+        </div>
+        <div class="flow container--md">
+            {% markdown %}{{ content.notfound.copy | safe }}{% endmarkdown %}
+            <nav class="cta" aria-label="call to action">
+                <ul role="list" class="cta__list flow">
+                    {% for item in content.notfound.links %}
+                        <li>
+                            <a href="{{ item.url }}" class="cta__link">{{ item.text | ctaLink | safe }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

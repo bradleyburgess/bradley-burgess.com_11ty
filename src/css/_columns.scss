@@ -1,0 +1,31 @@
+@use "variables" as *;
+
+.columns2 {
+  @media screen and (min-width: 64em) {
+    column-count: 2;
+    column-gap: fluid-size(56, 76, 1024, 1400);
+    & p,
+    & li {
+      break-inside: avoid;
+    }
+  }
+}
+
+.columns3 {
+  @media screen and (min-width: 40em) {
+    column-count: 2;
+    column-gap: fluid-size(56, 76, 1024, 1400);
+    & p,
+    & li {
+      break-inside: avoid;
+    }
+  }
+  @media screen and (min-width: 64em) {
+    column-count: 3;
+    column-gap: fluid-size(56, 76, 1024, 1400);
+    & p,
+    & li {
+      break-inside: avoid;
+    }
+  }
+}

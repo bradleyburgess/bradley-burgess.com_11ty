@@ -1,0 +1,13 @@
+.constrain--lg {
+  @media screen and (min-width: 64em) {
+    max-width: 55ch;
+  }
+}
+
+.constrain--sm {
+  max-width: 25.5rem;
+}
+
+.constrain--md {
+  max-width: 29.5rem;
+}

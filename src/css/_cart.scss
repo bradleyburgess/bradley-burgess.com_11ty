@@ -1,0 +1,29 @@
+@use "variables" as *;
+
+.cart {
+  // BE CAREFUL; icon .cart is a thing
+  &__container {
+    border-radius: 100vmax;
+    padding: 1em 1.5em;
+    min-height: 1.5rem;
+    border: 2px solid $clr-bg;
+    transition: all 0.15s ease-in-out;
+
+    &:hover,
+    &:focus-visible {
+      border: 2px solid white;
+    }
+  }
+
+  &__counter {
+    display: inline-block;
+    width: 1rem;
+    text-align: right;
+  }
+}
+
+cart-counter {
+  height: 4.375rem;
+  display: flex;
+  align-items: center;
+}

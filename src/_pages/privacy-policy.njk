@@ -1,0 +1,16 @@
+---
+layout: "layouts/base.njk"
+permalink: /privacy-policy/
+title: Privacy Policy
+---
+
+<div class="container">
+    <div class="container--md center">
+        <div class="constrain--lg markdown">
+            <h1 class="ta-center">{{ content.privacyPolicy.heading }}</h1>
+            <div class="mt flow">
+                {{ content.privacyPolicy.copy | markdown | safe }}
+            </div>
+        </div>
+    </div>
+</div>

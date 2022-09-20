@@ -3,13 +3,13 @@ id      = "compositions"
 
 copy   = """
 I mostly write hymn settings for liturgical (i.e. not concert) use. These are 
-my most recent works, and you can find more by visiting the [shop](/shop).
+my most recent works, and you can find more by visiting the [shop](/shop/).
 
-If you would like to commission a hymn setting, feel free to 
-[reach out to me](/contact).
+If you don't find something you want in the shop, talk to me about 
+[commissioning a hymn setting](/services/commission-a-hymn-setting/).
 
-I do all my engraving in [Liliypond](https://lilypond.org), and self-publish 
-my scores on [Gumroad](https://bradleyburgess.gumroad.com).
+I do all my engraving in [Liliypond](https://lilypond.org), which is a 
+powerful free and open-source engraving software.
 """
 
 [[ works ]]

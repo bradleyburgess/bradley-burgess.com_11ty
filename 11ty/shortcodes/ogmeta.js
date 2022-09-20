@@ -32,7 +32,7 @@ module.exports = function (title, url, description = sitemeta.description, type 
     ["og:site_name", sitemeta.title],
     ["twitter:title", sanitize(title)],
     ["twitter:description", sanitize(description)],
-    ["twitter:card", "summary_large_card"],
+    ["twitter:card", "summary_large_image"],
   ];
 
   tags.forEach((tag) => {

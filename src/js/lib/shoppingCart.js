@@ -1,7 +1,8 @@
-const SERVER_URL =
-  process.env === "production" ? process.env.SERVER_URL_PROD : process.env.SERVER_URL_DEV;
+const CHECKOUT_ENDPOINT = require("../../_data/endpoints").checkout;
+// const SERVER_URL =
+//   process.env === "production" ? process.env.SERVER_URL_PROD : process.env.SERVER_URL_DEV;
+// const CHECKOUT_ENDPOINT = `${SERVER_URL.replace(/\/$/, "")}/api/checkout`;
 
-const CHECKOUT_ENDPOINT = `${SERVER_URL.replace(/\/$/, "")}/api/checkout`;
 class ShoppingCart extends HTMLElement {
   constructor() {
     super();

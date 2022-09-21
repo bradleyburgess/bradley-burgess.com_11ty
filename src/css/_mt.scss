@@ -17,6 +17,23 @@
   --margin-top: 5rem;
 }
 
+.mt-md {
+  @extend .mt;
+  --margin-top: 2.5em;
+}
+
+/*
+ *  Padding top
+ */
+
 .pt-0 {
   padding-top: 0;
+}
+
+/*
+ *  Margin bottom
+ */
+
+.mb-0 {
+  margin-bottom: 0;
 }

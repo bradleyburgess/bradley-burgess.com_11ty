@@ -68,16 +68,18 @@ description: >-
                 <div class="cards" data-variant="large">
                     <ul class="cards__list" data-variant="flex-start" role="list">
                         {% for item in current.items %}
-                            <li class="cards__card" data-card data-url="{{ item.url }}">
+                            <li class="cards__card" data-card data-url="/portfolio/{{ item.title | slugify }}/">
                                 <div class="cards__text flow">
                                     <div class="cards__heading">
                                         <h3 class="cards__title">
-                                            <a href="{{ item.url }}">{{ item.title }}</a>
+                                            <a href="/portfolio/{{ item.title | slugify }}/">{{ item.title }}</a>
                                         </h3>
                                         <p class="cards__subtitle">{{ item.url | noProto }}</p>
                                     </div>
-                                    <p class="cards__body">{{ item.description }}. 
-                                        {# TODO: Add pages for each project with descriptions, details, etc. #}{# <span class="float-right">read more</span> #}</p>
+                                    <div class="cards__body flex-justify-between">
+                                        <p class="cards__body">{{ item.description }}.</p>
+                                        <span class="clr-neutral-800" aria-hidden>read more</span>
+                                    </div>
                                 </div>
                                 <div class="cards__image">
                                     {% image item.image,

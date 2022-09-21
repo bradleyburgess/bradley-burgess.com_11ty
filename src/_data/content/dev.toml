@@ -64,6 +64,46 @@ title       = "This Blog Is About You"
 url         = "https://thisblogisaboutyou.com"
 description = "Personal blog"
 image       = "screenshots/this-blog-is-about-you.png"
+stack       = ["html", "sass", "eleventy"]
+[[ portfolio.items.copySections ]]
+heading = "Project story"
+copy = """
+In early 2021, Jan was looking to start a blog. She approached me, not really
+knowing much of what she wanted. As I normally do, I asked her to send me some
+links to sites that she liked. Based on what she sent me, I could tell she was
+looking for something clean and minimal. And that's what I think I delivered!
+I did have some fun with the fancy dot that's on the front page and the header.
+"""
+[[ portfolio.items.copySections ]]
+heading = "Tech decisions"
+copy = """
+I was working with Next.js a lot at this point, but I felt that it was a little
+much for a _completely_ static blog. Jan needed to be able to add content, of
+course, but there was no actual dynamic content — only the blog posts that she
+was writing.
+
+This was the project that got me exploring static site generators more
+seriously, and I eventually found — and fell in love with —
+[Eleventy](https://11ty.dev). It is a such a joy to work with. I had already
+completed the project using Next, but I decided to redo it with Eleventy. I'm so
+glad I did, because 11ty has become my goto for static sites.
+
+The frontend is hosted on Netlify, and the CMS is GraphCMS (now Hygraph). The
+frontend stack is pure HTML, vanilla Javascript and Sass — no libraries
+whatsoever.
+
+I also wrote a custom plugin so that Jan could write captions for the images,
+and they would be semantically correct for screen readers etc. — but also
+styled nicely.
+"""
+[[ portfolio.items.links ]]
+type = "primary"
+text = "visit live site"
+url  = "https://thisblogisaboutyou.com"
+[[ portfolio.items.links ]]
+type = "secondary"
+text = "see on github"
+url  = "https://github.com/bradleyburgess/jan-blog_11ty"
 
 
 [[ portfolio.items ]]
@@ -71,6 +111,41 @@ title       = "Brakdakkie Guest Cottages"
 url         = "https://brakdakkie.co.za"
 description = "Bed & Breakfast"
 image       = "screenshots/brakdakkie.png"
+stack       = ["html", "sass", "javascript", "eleventy"]
+[[ portfolio.items.copySections ]]
+heading = "Project story"
+copy = """
+Brakdakkie Guest Cottages is one of the absolute highlights of Prince Albert,
+located in the Karoo, Western Cape, South Africa. It aims to be an authentically
+Karoo accommodation experience, taking you back to a simpler time. The décor is
+elegant and tasteful, featuring trinkets and furnishing reminiscent of a time
+gone by.
+
+As incredible a destination it is, their website was in need of an update.
+Kerri trusted me to take the spirit of Brakdakkie and create a design that
+matched its tasteful but rustic spirit. I took the existing content and
+reorganized the site map and layout to better showcase the cottages.
+"""
+[[ portfolio.items.copySections ]]
+heading = "Tech decisions"
+copy = """
+Like Jan's blog and this wite, I decided to go with [Eleventy](https://11ty.dev)
+to build a purely static site. The frontend stack is vanilla Javascript, relying
+on only one third-party library — [Photoswipe](https://photoswipe.com). I did
+borrow / adapt one Web Component / Custom Element for the accordion component
+on the about page (Policies).
+
+The frontend is hosted on Netlify, and for the CMS I chose GraphCMS (now 
+Hygraph).
+"""
+[[ portfolio.items.links ]]
+type = "primary"
+text = "visit live site"
+url  = "https://brakdakkie.co.za"
+[[ portfolio.items.links ]]
+type = "secondary"
+text = "see on github"
+url  = "https://github.com/bradleyburgess/brakdakkie_11ty"
 
 
 [[ portfolio.items ]]
@@ -78,6 +153,63 @@ title       = "Bradley Burgess"
 url         = "https://bradley-burgess.com"
 description = "Personal website"
 image       = "screenshots/bradley-burgess.png"
+stack = ["html", "sass", "javascript", "eleventy", "node", "docker", "postgres", "python"]
+[[ portfolio.items.copySections ]]
+heading = "Project story"
+copy = """
+I've always loved the internet. I can remember the moment I fell in love with
+it — watching the scene in the original Mission Impossible movie when Ethan
+Hunt (Tom Cruise) is sending an email to Max (Vanessa Redgrave) in his hotel
+room.
+
+Since then I've always tinkered with web technologies, and my personal site has
+taken many forms over the years. But I am most happy with this iteration. I
+wanted to create an online home that represents all my interests — as a
+musician, web developer, tinkerer, etc. — where people can come to find music
+but also learn about my web development journey, and where folks interested in
+my dev projects could hear a little Bach as well.
+
+I wanted a clean, modern, sophisticated design, but that is also inviting.
+The emphasis is on the content, which is also why I've spent a good deal of
+time making sure the performance is lightning fast.
+
+I also wanted to have everything in one place. I was using Gumroad to sell
+some scores, but I wanted the new site to have everything right there.
+"""
+[[ portfolio.items.copySections ]]
+heading = "Tech decisions"
+copy = """
+I spent a long time weighing different options, and I ended up going with a
+static frontend built with [Eleventy](https://11ty.dev). I wanted to use as
+little Javascript as possible, as to make it perform well under any condition.
+
+The real challenge was the shop. It definitely would have been easier to go
+all-in Javascript with something like Next.js, and perhaps that would have been
+a better choice. But I also realized that — realistically — the e-commerce part
+of the site wasn't the main focus. I managed to get the shop working
+fully-featured without relying on Javascript at all for the "Buy Now" links —
+the only caveat being that you need Javascript for using the cart functionality.
+
+I also create some Web Components / Custom Elements for the media players on the
+[music page](/music/#video). They are progressively enhanced, and allow for the
+playlist functionality. Without Javascript, they operate as regular hyperlinks.
+
+The backend is a Node.js / Express server that's managed in Docker containers. I
+produce all the scores with Lilypond. I wrote an internal Python CLI to generate
+the pdfs programatically, create the sample images (with "sample copy"
+watermark), upload them to my self-hosted S3 storage, and sync with the Stripe
+API. 
+
+After a successful purchase, the scores are watermarked with the buyer's
+information for licensing, before being uploaded to my S3 storage. Presigned
+urls are then generated and sent with SendGrid. I use PostgreSQL to maintain my
+own records of purchases and also to log submissions from the contact page form
+— just in case something goes wrong with the transactional emails.
+"""
+[[ portfolio.items.links ]]
+type = "primary"
+text = "see on github"
+url  = "https://github.com/bradleyburgess/bradley-burgess.com_11ty"
 
 
 

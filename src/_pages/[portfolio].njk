@@ -1,0 +1,90 @@
+---
+layout: "layouts/with-breadcrumb.njk"
+pagination:
+  data: content.dev.portfolio.items
+  size: 1
+  alias: portfolioItem
+permalink: /portfolio/{{ portfolioItem.title | slugify }}/
+backTo: /dev/#portfolio
+backToLabel: portfolio
+eleventyComputed:
+  title: "{{ portfolioItem.title }}"
+  description: "{{ portfolioItem.copy | truncate(30) }}"
+  ogImage: "{{ portfolioItem.image }}"
+  ogAlt: "null"
+---
+
+<div class="container mt">
+    <div class="container--md flow">
+        <h1 class="ff-alternate fs-900 mb-0">{{ portfolioItem.title }}</h1>
+        <span class="clr-neutral-800 fs-300">
+            <a href="{{ portfolioItem.url }}" class="normal">{{ portfolioItem.url | noProto }}</a>
+        </span>
+    </div>
+    <div class="grid cols2-one-two mt">
+        <div class="container--md flow">
+            <div class="image-container edge-to-edge">
+                {% image portfolioItem.image,
+                "",
+                sizes="(max-width: 42.375em) 100vw, (max-width: 63.9375em) 39.25rem, 38.25rem",
+                loading="eager"
+                %}
+            </div>
+            <div class="button__container flex-justify-center flex-wrap">
+                {% for button in portfolioItem.links %}
+                    <a href="{{ button.url }}" class="button {{ button.type }}">{{ button.text }}</a>
+                {% endfor %}
+            </div>
+            <div class="flow mt">
+                <h3>Tech Stack</h3>
+                <ul role="list" class="flex-wrap column-gap-900 row-gap-500">
+                    {% for item in portfolioItem.stack %}
+                        <li class="flex-align-center column-gap-200">
+                            <span class="icon flat {{ item }}"></span>
+                            <span class="uppercase fs-300 clr-neutral-800">{{ item }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="container--md flow">
+            {% for section in portfolioItem.copySections %}
+                <div class="container--md flow">
+                    <h2 class="fs-600 ff-body bold {{ "mt-md" if loop.index > 1 }}">{{ section.heading }}</h2>
+                    <div class="markdown">
+                        {{ section.copy | markdown | safe }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{# <div class="container center">
+    <div class="constrain--lg center">
+        <div class="container--md mt flow">
+            <h1 class="ff-alternate fs-900">{{ portfolioItem.title }}</h1>
+            <div class="edge-to-edge">
+                <div class="image-container">
+                    {% image portfolioItem.image,
+                    "" %}
+                </div>
+            </div>
+            <div class="button__container">
+                {% for button in portfolioItem.links %}
+                    <a href="{{ button.url }}" class="button {{ button.type }}">{{ button.text }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="flow mt">
+            {% for section in portfolioItem.copySections %}
+                <div class="container--md flow">
+                    <h2 class="fs-600 ff-body bold {{ "mt-md" if loop.index > 1 }}">{{ section.heading }}</h2>
+                    <div class="markdown">
+                        {{ section.copy | markdown | safe }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div> #}

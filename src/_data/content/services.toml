@@ -15,7 +15,7 @@ blurb = """Beginner to very advanced. Build technique and learn effective \
 practice strategies."""
 testimonials = ['piano1', 'piano2']
 copy = """
-I’ve been privileged to be able to study with some truly excellent teachers, and 
+I’ve been privileged to be able to study with some truly excellent teachers, and
 I have a passion for sharing the knowledge that I’ve been given with others. I 
 have over a decade of teaching experience, and would love to talk to you about 
 starting lessons.
@@ -24,18 +24,19 @@ The teacher-student relationship is the foundation for all learning, and I do
 everything I can to build trust and create a safe environment for students. In 
 lessons with me, there are no silly questions or obvious answers — we all have 
 different strengths and backgrounds. I also do everything I can to be 
-accomodating and understanding; while I do have a studio policy, I do 
+accommodating and understanding; while I do have a studio policy, I do 
 understand that life happens, and sometimes things come up. Some weeks we can’t 
 practice as much as we want to, and sometimes we have to cancel lessons. That’s 
 ok.
 
-My long-term goal in teaching students is to make them independent. That’s why 
-I take every oppportunity to incorporate learning healthy technique and good 
-practice strategies into lessons. 
+My long-term goal in teaching is to make students independent. That’s why I take
+every opportunity to incorporate learning healthy technique and good practice
+strategies into lessons. 
 
-I always offer a free 30-minute consultation. This is an opportunity to get to 
-know each other a little, for us both to see if it would be a good fit, and for 
-me to formulate an idea of what your (or your child’s) interests and goals are.
+I always offer a free 30-minute consultation for new prospective students. This
+is an opportunity to get to know each other a little, for us both to see if it
+would be a good fit, and for me to formulate an idea of what your (or your
+child’s) interests and goals are.
 """
 
 [[ music.items.buttons ]]
@@ -78,22 +79,27 @@ blurb = """Transition to the organ from the piano. Learn to play the organ with 
 expression. Hymn playing and liturgical improvisation.
 """
 copy = """
-I’ve been privileged to be able to study with some truly excellent teachers, and 
-I have a passion for sharing the knowledge that I’ve been given with others. I 
-have over a decade of teaching experience, and would love to talk to you about 
-starting lessons.
+Having only taken up the organ more seriously in my mid-twenties, after having
+reached a high level as a pianist, I have a special interest in helping pianists
+transition to the organ or take it on as a second instrument. If you are a
+pianist looking to study the organ — or perhaps a "reluctant" organist who finds
+themselves having to play at church — I'd love to talk to you!
+
+If you are interested in creative hymn playing, be sure to check out my scores
+at the [shop](/shop/). If you are wanting to learn how to approach hymns more
+creatively, [let's chat!](/contact/)
 
 The teacher-student relationship is the foundation for all learning, and I do 
 everything I can to build trust and create a safe environment for students. In 
 lessons with me, there are no silly questions or obvious answers — we all have 
 different strengths and backgrounds. I also do everything I can to be 
-accomodating and understanding; while I do have a studio policy, I do 
+accommodating and understanding; while I do have a studio policy, I do 
 understand that life happens, and sometimes things come up. Some weeks we can’t 
 practice as much as we want to, and sometimes we have to cancel lessons. That’s 
 ok.
 
 My long-term goal in teaching students is to make them independent. That’s why 
-I take every oppportunity to incorporate learning healthy technique and good 
+I take every opportunity to incorporate learning healthy technique and good 
 practice strategies into lessons. 
 
 I always offer a free 30-minute consultation. This is an opportunity to get to 
@@ -121,18 +127,14 @@ content = "30 min, 45 min, or 60 min"
 [[ music.items.quickinfo ]]
 title   = "Learning areas"
 content = """
-- Organ repertoire
-- Hymn playing
-- Registration
-- Manual & pedal technique
 - Transitioning from the piano
-- Accompanying
-- Beginner improvisation
+- Manual & pedal technique
+- Registration
+- Hymn playing & accompanying
+- Creative hymn playing
+- Organ repertoire
+- Beginning improvisation
 """
-
-[[ music.items.quickinfo ]]
-title   = "Lesson duration"
-content = "30 min, 45 min, or 60 min"
 
 
 # teaching: music theory & musicianship ------------------
@@ -144,27 +146,19 @@ blurb = """Improve your understanding of the music you play. Improve your aural 
 skills so you can play by ear or improvise with more freedom. Basic conducting.
 """
 copy = """
-I’ve been privileged to be able to study with some truly excellent teachers, and 
-I have a passion for sharing the knowledge that I’ve been given with others. I 
-have over a decade of teaching experience, and would love to talk to you about 
-starting lessons.
+A good grasp of music theory & harmony, and a good foundation of aural skills /
+ear training can make a tremendous difference in the confidence and ability of a
+musician. There is so much more to music than instrumental technique —
+especially if you are making music with others.
 
-The teacher-student relationship is the foundation for all learning, and I do 
-everything I can to build trust and create a safe environment for students. In 
-lessons with me, there are no silly questions or obvious answers — we all have 
-different strengths and backgrounds. I also do everything I can to be 
-accomodating and understanding; while I do have a studio policy, I do 
-understand that life happens, and sometimes things come up. Some weeks we can’t 
-practice as much as we want to, and sometimes we have to cancel lessons. That’s 
-ok.
+I offer a free 30-minute consultation for new prospective students. This
+is an opportunity to get to know each other a little, for us both to see if it
+would be a good fit, and for me to formulate an idea of what your (or your
+child’s) interests and goals are.
 
-My long-term goal in teaching students is to make them independent. That’s why 
-I take every oppportunity to incorporate learning healthy technique and good 
-practice strategies into lessons. 
-
-I always offer a free 30-minute consultation. This is an opportunity to get to 
-know each other a little, for us both to see if it would be a good fit, and for 
-me to formulate an idea of what your (or your child’s) interests and goals are.
+If you are looking to supplement your learning with learning or revisiting the
+basics of theory and harmony, or developing your ear, I will work with you do
+develop a personalized curriculum to achieve your goals.
 """
 
 [[ music.items.buttons ]]
@@ -187,10 +181,10 @@ content = "30 min, 45 min, or 60 min"
 [[ music.items.quickinfo ]]
 title   = "Learning areas"
 content = """
-- Basic conducting
 - Ear training
-- Sight-reading
 - Harmony & theory
+- Sight-reading
+- Basic conducting
 - Performance analysis
 - College prep
 """
@@ -202,30 +196,63 @@ title = "Teaching: Creative Hymn Playing"
 image = "https://images.unsplash.com/photo-1554089554-7a3bdc318d3a?w=1920"
 rate  = "$70 / hour"
 blurb = """Learn to create your own hymn settings. Inspire better congregational \
-singing with interprative introductions, bridges, and reharmonized last verses.
+singing with interpretive introductions, bridges, and reharmonized last verses.
 """
 copy = """
-I’ve been privileged to be able to study with some truly excellent teachers, and 
-I have a passion for sharing the knowledge that I’ve been given with others. I 
-have over a decade of teaching experience, and would love to talk to you about 
-starting lessons.
 
-The teacher-student relationship is the foundation for all learning, and I do 
-everything I can to build trust and create a safe environment for students. In 
-lessons with me, there are no silly questions or obvious answers — we all have 
-different strengths and backgrounds. I also do everything I can to be 
-accomodating and understanding; while I do have a studio policy, I do 
-understand that life happens, and sometimes things come up. Some weeks we can’t 
-practice as much as we want to, and sometimes we have to cancel lessons. That’s 
-ok.
+Hymn playing can — and should — be a lot of fun. Good hymn playing requires not
+only a mastery of the instrument, but also attention to the text, imagination,
+and flexibility.
 
-My long-term goal in teaching students is to make them independent. That’s why 
-I take every oppportunity to incorporate learning healthy technique and good 
-practice strategies into lessons. 
+I enjoy bringing the text on the page to life through thoughtful registration,
+creative introductions, bridge, reharmonizations, and free accompaniments.
 
-I always offer a free 30-minute consultation. This is an opportunity to get to 
-know each other a little, for us both to see if it would be a good fit, and for 
-me to formulate an idea of what your (or your child’s) interests and goals are.
+You can get a sense of my style by heading on over to the [shop](/shop/), or by
+listening to some of the audio samples below:
+
+<ul class="grid cols2-even" role="list">
+  <li class="flow">
+    <p>DIADEMATA</p>
+    <audio 
+      controls 
+      controlslist="nodownload noplaybackrate" 
+      data-plyraudio
+      src="https://dl.dropboxusercontent.com/s/xezow14e2thj09g/hymn_diademeta.mp3?dl=0"
+    />
+  </li>
+  <li class="flow">
+    <p>NICAEA</p>
+    <audio 
+      controls 
+      controlslist="nodownload noplaybackrate" 
+      data-plyraudio
+      src="https://dl.dropboxusercontent.com/s/wf7gyhvyk0gjev0/hymn_nicaea.mp3?dl=0" 
+    />
+  </li>
+  <li class="flow">
+    <p>ROYAL OAK</p>
+    <audio 
+      controls 
+      controlslist="nodownload noplaybackrate" 
+      data-plyraudio
+      src="https://dl.dropboxusercontent.com/s/6d3spn6q89l34sc/hymn_royal-oak.mp3?dl=0" 
+    />
+  </li>
+  <li class="flow">
+    <p>WESTMINSTER ABBEY</p>
+    <audio 
+      controls 
+      controlslist="nodownload noplaybackrate" 
+      data-plyraudio
+      src="https://dl.dropboxusercontent.com/s/5m64zrkr91jiswu/hymn_westminster-abbey.mp3?dl=0" 
+    />
+  </li>
+</ul>
+
+I always offer a free 30-minute consultation for new prospective students. This
+is an opportunity to get to know each other a little, for us both to see if it
+would be a good fit, and for me to formulate an idea of what your (or your
+child’s) interests and goals are.
 """
 
 [[ music.items.buttons ]]
@@ -475,8 +502,8 @@ areas that need improvement. I can assess a site's security, accessibility,
 performance, search engine optimization (SEO), and adherence to modern best 
 practices.
 
-A security is particularly important if your website is built with Wordpress. 
-As powerful as it is, the Wordpress platform is notorious for security 
+Security is particularly important if your website is built with Wordpress. As
+powerful as it is, the Wordpress platform is notorious for security 
 vulnerabilities, such as SQL injection.
 
 An accessibility audit will give you an overview of how easily your site can be 
@@ -508,13 +535,13 @@ content = """
 - SEO
 """
 
-# spreadsheets -------------------------------------------
+# spreadsheets & automation ------------------------------
 [[ development.items ]]
-title = "Spreadsheets"
+title = "Spreadsheets & automation"
 image = "https://images.unsplash.com/photo-1529078155058-5d716f45d604?w=1920"
 rate  = "$20 – $200"
-blurb = """Custom-built spreadsheets for catalogs, budgets, planning. Automation 
-and great user experience through advanced formulas."""
+blurb = """Custom-built spreadsheets or scripts for catalogs, budgets, planning. \
+Automation and great user experience through advanced formulas."""
 copy = """
 Not all problems are best solved with yet another app or website. Some folks 
 love spreadsheets (me included!), and use it to manage their home budgets, 
@@ -524,6 +551,9 @@ for planning all my music at work.
 I can offer help with creating whole new spreadsheets that not only look great, 
 but are also great to work with. I can create advanced, custom formulas to help
 automate all the boring stuff — no more copy-pasting!
+
+I also can help you automate repetitive tasks through Python scripting. Examples
+can include web scraping, sending emails, etc.
 """
 
 [[ development.items.buttons ]]
@@ -538,10 +568,12 @@ url   = "/contact/"
 [[ development.items.quickinfo ]]
 title = "Features"
 content = """
-- beautiful sheets
+- great-looking spreadsheets
 - advanced, custom formulas
 - automation
 - SQL
+- Python scripting
+- web scraping
 """
 
 # personal online audit ----------------------------------

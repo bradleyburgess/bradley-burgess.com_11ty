@@ -10,11 +10,10 @@ const apiKey = NODE_ENV === "production" ? STRIPE_KEY : STRIPE_KEY_TEST;
 const stripe = Stripe(apiKey);
 
 async function getStripeData() {
-  const { data } = await stripe.products.list({ limit: 100 });
+  const { data } = await stripe.products.list({ limit: 100, active: true });
 
   // Filter out all Stripe-created products
-  const _rawProducts =
-    NODE_ENV === "production" ? data : data.filter((item) => item.name !== "myproduct");
+  const _rawProducts = data.filter((item) => item.name !== "myproduct");
 
   const rawProducts = await Promise.all(
     _rawProducts.map(async (product) => {

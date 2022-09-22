@@ -6,23 +6,26 @@ self-hosted solutions whenever possible.
 
 ## Cookies
 
-This website uses _no cookies at all_. Not a single one. Not a crumb!  They only
-data that is stored on the client side (i.e. your browser) is the products of
-the items in your cart, if you use the shop. That's it!
+This website uses _no cookies at all_. Not a single one. Not a crumb! The only
+data that is stored on the client side (i.e. your browser) is the products your
+cart — if you use the shop. That's it!
 
 ## Your information
 
-Of course, if you make a purchase, I get notified of that, and I can see what 
+Of course, if you make a purchase, I get notified about that, and I can see what
 you've bought. But you can be confident that your information is not being 
 distributed to anyone in any way at all. I might reach out to you to see how 
 satisfied you are with a purchase, but that is the sum total of how your 
 information might be used.
 
-## Tracking
+I do log IP addresses for form submissions on the [contact page](/contact/).
+These are added to a database on my private, self-managed server, and that
+information is _only_ used for spam prevention.
+
+## Tracking & analytics
 
 I use a self-hosted instance of [ShyNet](https://github.com/milesmcc/shynet) for
 web analytics. I chose ShyNet because it does not require Javascript, and it
-uses zero cookies. It is therefore anonymous, and no data that is collected can
-be linked back to you directly.
-
+uses no cookies. It is therefore anonymous, and no data that is collected can be
+linked back to you directly.
 """

@@ -11,15 +11,15 @@ more ethical web. You can read more about the [ethical web](#ethical-web)
 below.
 
 In my work, I prioritize accessibility for all users, performance, speed, and 
-following best practices.
+following best practices and standards.
 
 I am available for hire for any of the following:
 
-- building new websites from scratch
-- fixing issues on existing websites
-- performance and accessibility consulting
+- [building new websites from scratch](/services/new-website/)
+- [fixing issues on existing websites](/services/fix-issues-on-an-existing-website/)
+- [performance and accessibility consulting](/services/website-audit/)
 
-For more information, see the [services](/services) page.
+For more information, see the [services](/services/) page.
 """
 
 
@@ -226,9 +226,17 @@ copy = """
 As a web developer, my main interest is in helping to create a more ethical 
 web. What do I mean by the “ethical web”? There is no single, universally 
 agreed-upon definition, but In short, the ethical web puts the user and the 
-environment first. 
+environment first.
 
-Ethical websites:
+I do my best to only use open-source tools, and I try to only choose products
+and services from companies with good, (more) ethical business practices,
+especially those with a stated green policy. I have switched providers when I
+don't feel that a company's values align with my own ([here's one
+example](https://www.nocloudflare.com/)), and do reassess platforms, tools and
+services from time to time.
+
+
+Ethically-designed websites:
 
 - are accessible to any user, regardless of (dis)ability
 - are secure, and transparent about privacy
@@ -243,6 +251,7 @@ A great reference is the
 created by the World Wide Web Consortium (W3C), which outlines some of these 
 requirements. [The Green Web Foundation](https://www.thegreenwebfoundation.org/) 
 is a good resource for understanding the need for a fossil-free internet.
+
 
 In building accessible websites, these are some of the considerations I make:
 
@@ -276,10 +285,10 @@ These days, I am primarily making static sites (i.e. not web apps), but I love
 tinkering, and have made various other projects.
 
 I am most at home with Javascript in the browser and Node, but I am pretty 
-comfortable with Python and reasonably adept with SQL and Google Sheets as 
-well; if you need help creating a robust spreadsheet solution to a problem, I 
-am available for that work as well. See the [services page](/services) for more 
-info.
+comfortable with Python and reasonably adept with SQL and Google Sheets as well;
+if you need help creating a robust spreadsheet solution to a problem, I am
+available for that work as well. See the [services page](/services/#development)
+for more info.
 """
 
 [[ otherprojects.items ]]

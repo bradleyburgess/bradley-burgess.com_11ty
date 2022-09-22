@@ -9,15 +9,15 @@ id       = "musician"
 image    = "bradley/bradley-at-organ.jpg"
 imageAlt = "Bradley, smiling and facing the camera, sitting in front of a 5-manual organ."
 copy     = """
-I am a classically-trained pianist and organist, and I have graduate
-degrees in both instruments. I’m often asked who my favorite composers
-are. That’s a tough question, because I’m eclectic. But as a pianist,
-I gravitate towards Beethoven, Brahms, and Liszt. And as an organist,
-my hands are feet are happiest with Bach, Widor, and more contemporary
-music. You can find some recordings on my music page.
+I am a classically-trained pianist and organist, and I have graduate degrees in
+both instruments. I’m often asked who my favorite composers are. That’s a tough
+question, because I’m rather eclectic. But as a pianist, I gravitate towards
+Beethoven, Brahms, and Liszt. And as an organist, my hands are feet are happiest
+with Bach, Widor, and more contemporary music. You can find some recordings on
+my music page.
 
-I teach piano, organ and music theory. I also do a bit of composition
-and arrangement, and mostly write hymn settings for liturgical use.
+[I teach piano, organ and music theory](/music/#teaching). I also do a bit of
+composition and arrangement, and mostly write hymn settings for liturgical use.
 """
     [[ sections.links ]]
     text = "Shop for scores."

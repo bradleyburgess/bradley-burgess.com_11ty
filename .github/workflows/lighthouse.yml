@@ -41,7 +41,7 @@ jobs:
         run: yarn && yarn global add @lhci/cli@0.9.x
 
       - name: Build site
-        run: ANALYTICS_IMGSRC=${{ secrets.ANALYTICS_IMGSRC }} ANALYTICS_SCRIPTSRC=${{ secrets.ANALYTICS_SCRIPTSRC }} STRIPE_KEY=${{ secrets.STRIPE_KEY }} SERVER_URL_PROD=${{ secrets.SERVER_URL_PROD }} yarn build
+        run: ANALYTICS_DISABLED=true STRIPE_KEY=${{ secrets.STRIPE_KEY }} SERVER_URL_PROD="" yarn build
 
       - name: Run Lighthouse
         run: lhci autorun

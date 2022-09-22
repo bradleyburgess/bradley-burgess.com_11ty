@@ -31,13 +31,6 @@ const ytEmbedFilter = require("./11ty/filters/ytEmbed");
 const ytUrlFilter = require("./11ty/filters/ytUrl");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.on("eleventy.before", () => {
-    if (process.env.NODE_ENV === "production") {
-      ["ANALYTICS_IMGSRC", "ANALYTICS_SCRIPTSRC", "STRIPE_KEY"].forEach((item) => {
-        if (!process.env[item]) throw new Error(`${item} not defined!`);
-      });
-    }
-  });
   eleventyConfig.on("eleventy.before", videoToJsonScript);
   eleventyConfig.on("eleventy.before", audioToJsonScript);
   eleventyConfig.addWatchTarget("./11ty");

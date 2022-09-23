@@ -1,10 +1,5 @@
 import BurgerMenu from "./lib/burger-menu";
 
-if (process?.env?.NODE_ENV === "production") {
-  window["console"]["error"] = function () {};
-  window["console"]["warn"] = function () {};
-}
-
 // Load hamburger menu
 if ("customElements" in window) {
   customElements.define("burger-menu", BurgerMenu);

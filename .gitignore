@@ -22,3 +22,5 @@ _testing/
 
 # Local Netlify folder
 .netlify
+
+.lighthouseci/

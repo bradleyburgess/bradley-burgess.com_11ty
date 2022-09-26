@@ -24,7 +24,8 @@
   @media screen and (min-width: 64em) {
     --x-padding: 1rem;
     --header-min-height: 4.099375rem;
-    --header-padding: 1.5rem; }
+    --header-padding: 1.5rem;
+  }
 }
 
 /*
@@ -120,6 +121,20 @@ em {
 
 *:not(nav) > ul:not([class]) {
   padding-left: 1.25rem;
+}
+
+pre,
+code {
+  font-family: $ff-mono;
+}
+
+code {
+  display: inline-block;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  background-color: $clr-neutral-400;
+  font-size: 1.05em;
+  line-height: 1.1;
 }
 
 /*

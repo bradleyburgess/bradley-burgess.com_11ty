@@ -160,7 +160,8 @@ copy = """
 I've always loved the internet. I can remember the moment I fell in love with
 it — watching the scene in the original Mission Impossible movie when Ethan
 Hunt (Tom Cruise) is sending an email to Max (Vanessa Redgrave) in his hotel
-room.
+room. Such a simple thing in today's world, yet it blew my mind back then that
+that was possible.
 
 Since then I've always tinkered with web technologies, and my personal site has
 taken many forms over the years. But I am most happy with this iteration. I
@@ -179,32 +180,40 @@ some scores, but I wanted the new site to have everything right there.
 [[ portfolio.items.copySections ]]
 heading = "Tech decisions"
 copy = """
-I spent a long time weighing different options, and I ended up going with a
-static frontend built with [Eleventy](https://11ty.dev). I wanted to use as
-little Javascript as possible, as to make it perform well under any condition.
+### Frontend
+
+I spent a long time weighing different options for the frontend, and I ended up
+going with a static frontend built with [Eleventy](https://11ty.dev). I wanted
+to use as little Javascript as possible, as to make it perform well under any
+condition.
 
 The real challenge was the shop. It definitely would have been easier to go
-all-in Javascript with something like Next.js, and perhaps that would have been
-a better choice. But I also realized that — realistically — the e-commerce part
-of the site wasn't the main focus. I managed to get the shop working
+all-in with Javascript — something like Next.js — and perhaps that would have
+been a better choice. But I also realized that, realistically, the e-commerce
+part of the site wasn't the main focus. I managed to get the shop working
 fully-featured without relying on Javascript at all for the "Buy Now" links —
 the only caveat being that you need Javascript for using the cart functionality.
 
-I also create some Web Components / Custom Elements for the media players on the
-[music page](/music/#video). They are progressively enhanced, and allow for the
-playlist functionality. Without Javascript, they operate as regular hyperlinks.
+I also created some Web Components / Custom Elements for the media players on
+the [music page](/music/#video). They are progressively enhanced, and allow for
+the playlist functionality and "Now Playing" widget. Without Javascript, they
+operate as regular hyperlinks.
 
-The backend is a Node.js / Express server that's managed in Docker containers. I
-produce all the scores with Lilypond. I wrote an internal Python CLI to generate
-the pdfs programatically, create the sample images (with "sample copy"
-watermark), upload them to my self-hosted S3 storage, and sync with the Stripe
-API. 
+### Backend
+
+The backend is a Node.js / Express server wtih Postgres that's managed in Docker
+containers. I produce all the scores with Lilypond. I wrote an internal Python
+CLI to generate the pdfs programatically, create the sample images (with "sample
+copy" watermark), upload them to my self-hosted S3 storage, and sync with the
+Stripe API. 
 
 After a successful purchase, the scores are watermarked with the buyer's
 information for licensing, before being uploaded to my S3 storage. Presigned
 urls are then generated and sent with SendGrid. I use PostgreSQL to maintain my
 own records of purchases and also to log submissions from the contact page form
 — just in case something goes wrong with the transactional emails.
+
+I also manage DB backups using a `crontab`bed Python script.
 """
 [[ portfolio.items.links ]]
 type = "primary"

@@ -36,7 +36,7 @@ eleventyComputed:
                 {% endfor %}
             </div>
             <div class="flow mt">
-                <h3>Tech Stack</h3>
+                <h2 class="fs-600">Tech Stack</h2>
                 <ul role="list" class="flex-wrap column-gap-900 row-gap-500">
                     {% for item in portfolioItem.stack %}
                         <li class="flex-align-center column-gap-200">
@@ -50,8 +50,8 @@ eleventyComputed:
         <div class="container--md flow">
             {% for section in portfolioItem.copySections %}
                 <div class="container--md flow">
-                    <h2 class="fs-600 ff-body bold {{ "mt-md" if loop.index > 1 }}">{{ section.heading }}</h2>
-                    <div class="markdown">
+                    <h2 class="" data=class="fs-600 ff-body bold {{ "mt-md" if loop.index > 1 }}">{{ section.heading }}</h2>
+                    <div class="markdown flow">
                         {{ section.copy | markdown | safe }}
                     </div>
                 </div>

@@ -50,7 +50,10 @@ eleventyComputed:
         <div class="container--md flow">
             {% for section in portfolioItem.copySections %}
                 <div class="container--md flow">
-                    <h2 class="" data=class="fs-600 ff-body bold {{ "mt-md" if loop.index > 1 }}">{{ section.heading }}</h2>
+                    <h2 
+                    class="{{ "mt-md" if loop.index > 1 }}"
+                    {# class="fs-600 ff-body bold {{ "mt-md" if loop.index > 1 }}" #}
+                    >{{ section.heading }}</h2>
                     <div class="markdown flow">
                         {{ section.copy | markdown | safe }}
                     </div>

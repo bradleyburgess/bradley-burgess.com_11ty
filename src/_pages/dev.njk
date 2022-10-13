@@ -75,6 +75,11 @@ description: >-
                                             <a href="/portfolio/{{ item.title | slugify }}/">{{ item.title }}</a>
                                         </h3>
                                         <p class="cards__subtitle">{{ item.url | noProto }}</p>
+                                        {% if item.firetower %}
+                                        <div class="firetower-min mt">
+                                            <firetower-scores raw-scores="{{ item.firetower }}" rounded></firetower-scores>
+                                        </div>
+                                        {% endif %}
                                     </div>
                                     <div class="cards__body flex-justify-between">
                                         <p class="cards__body">{{ item.description }}.</p>

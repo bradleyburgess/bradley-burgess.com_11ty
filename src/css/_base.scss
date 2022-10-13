@@ -192,3 +192,20 @@ a.sr-only {
 main:focus {
   outline: none;
 }
+
+/*
+ * ==============================================
+ *  Firetower Variables
+ * ==============================================
+ */
+
+.firetower-full {
+  --firetower-container-gap: 1em;
+  --firetower-container-justify: flex-start;
+}
+
+.firetower-min {
+  --firetower-base-size: 0.5rem;
+  --firetower-container-justify: flex-start;
+  --margin-top: 0.75rem;
+}

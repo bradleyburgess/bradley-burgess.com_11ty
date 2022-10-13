@@ -65,6 +65,7 @@ url         = "https://thisblogisaboutyou.com"
 description = "Personal blog"
 image       = "screenshots/this-blog-is-about-you.png"
 stack       = ["html", "sass", "eleventy"]
+firetower = "0.97,1,1,1"
 [[ portfolio.items.copySections ]]
 heading = "Project story"
 copy = """
@@ -112,6 +113,7 @@ url         = "https://brakdakkie.co.za"
 description = "Bed & Breakfast"
 image       = "screenshots/brakdakkie.png"
 stack       = ["html", "sass", "javascript", "eleventy"]
+firetower = "0.97,1,1,1"
 [[ portfolio.items.copySections ]]
 heading = "Project story"
 copy = """
@@ -154,6 +156,7 @@ url         = "https://bradley-burgess.com"
 description = "Personal website"
 image       = "screenshots/bradley-burgess.png"
 stack = ["html", "sass", "javascript", "eleventy", "node", "docker", "postgres", "python"]
+firetower = "0.99,1,1,1"
 [[ portfolio.items.copySections ]]
 heading = "Project story"
 copy = """

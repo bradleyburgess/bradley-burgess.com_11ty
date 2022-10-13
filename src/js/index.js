@@ -1,4 +1,5 @@
 import BurgerMenu from "./lib/burger-menu";
+import "firetower-scores/dist/fts.min.js";
 
 // Load hamburger menu
 if ("customElements" in window) {

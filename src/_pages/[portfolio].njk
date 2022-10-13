@@ -46,14 +46,16 @@ eleventyComputed:
                     {% endfor %}
                 </ul>
                 <h2 class="fs-600">Lighthouse Scores</h2>
+                {% if portfolioItem.firetower %}
                 <div class="mt firetower-full">
                     <firetower-scores 
-                        raw-scores="0.99,1,1,1" 
+                        raw-scores="{{ portfolioItem.firetower }}" 
                         variant="labels" 
                         rounded 
                         animated
                     ></firetower-scores>
                 </div>
+                {% endif %}
             </div>
         </div>
         <div class="container--md flow">

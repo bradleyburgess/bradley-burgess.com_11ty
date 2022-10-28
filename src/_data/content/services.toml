@@ -195,6 +195,7 @@ content = """
 title = "Teaching: Creative Hymn Playing"
 image = "https://images.unsplash.com/photo-1554089554-7a3bdc318d3a?w=1920"
 rate  = "$70 / hour"
+testimonials = ['organ1', 'organ2']
 blurb = """Learn to create your own hymn settings. Inspire better congregational \
 singing with interpretive introductions, bridges, and reharmonized last verses.
 """

@@ -23,7 +23,7 @@
     "firetower-scores": "^0.1.1",
     "photoswipe": "^5.3.2",
     "plyr": "^3.7.2",
-    "stripe": "^10.7.0"
+    "stripe": "^10.16.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",

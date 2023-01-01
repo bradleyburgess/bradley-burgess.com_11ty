@@ -141,8 +141,8 @@ class Playlist extends HTMLElement {
 
     // make sure only one player running at a time
     this.player.on("play", () => {
-      const otherPlayer = window.players.find((plyr) => plyr != this.player);
-      otherPlayer.pause();
+      const otherPlayers = window.players.filter((plyr) => plyr != this.player);
+      otherPlayers.forEach((player) => player.pause());
     });
   }
 
@@ -185,7 +185,8 @@ class Playlist extends HTMLElement {
   }
 
   handleAnchorClick(e) {
-    const anchor = e.path.find((elem) => elem.tagName === "A");
+    const path = e.path ?? (e.composedPath && e.composedPath());
+    const anchor = path.find((elem) => elem.tagName === "A");
 
     if (!anchor) return;
     e.preventDefault();

@@ -23,6 +23,9 @@
         description %}
         {% ogimage ogImg or sitemeta.ogImg, ogAlt or sitemeta.ogAlt %}
 
+        {# Fix for DarkReader bug: hamburger background styles #}
+        <meta name="darkreader-lock">
+
         {# Main Css and JS #}
         <link rel="stylesheet" href="/assets/css/index{{ hash.css.index }}.css" media="screen">
         <script src="/assets/js/index{{ hash.js.index }}.js" defer></script>

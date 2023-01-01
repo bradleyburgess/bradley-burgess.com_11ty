@@ -9,8 +9,9 @@ html {
   font-size: 100%;
 }
 
-body {
-  overflow-x: hidden;
+// Firefox edge-to-edge X-scroll fix
+main {
+  overflow: hidden;
 }
 
 /* No scrollbar shift trick */

@@ -9,6 +9,10 @@ html {
   font-size: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* No scrollbar shift trick */
 // @media screen and (min-width: 82em) {
 // html {

@@ -22,7 +22,7 @@
   "dependencies": {
     "firetower-scores": "^0.1.1",
     "photoswipe": "^5.3.6",
-    "plyr": "^3.7.2",
+    "plyr": "^3.7.7",
     "stripe": "^11.13.0"
   },
   "devDependencies": {

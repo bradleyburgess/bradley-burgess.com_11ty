@@ -1,0 +1,16 @@
+---
+layout: "layouts/base.njk"
+permalink: /blog/hnoj-2023-recital-notes/
+title: HNOJ Recital Notes
+---
+
+<div class="container">
+    <div class="container--md center">
+        <div class="constrain--lg markdown">
+            <h1 class="ta-center">HNOJ Recital Notes</h1>
+            <div class="mt flow">
+               {{ content.hnojNotes.copy | markdown | safe }} 
+            </div>
+        </div>
+    </div>
+</div>

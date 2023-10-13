@@ -7,66 +7,66 @@ heading = "Music services."
 id      = "music"
 
 # teaching: piano ----------------------------------------
-[[ music.items ]]
-title = "Teaching: Piano"
-image = "https://images.unsplash.com/photo-1513883049090-d0b7439799bf?w=1920"
-rate  = "$70 / hour"
-blurb = """Beginner to very advanced. Build technique and learn effective \
-practice strategies."""
-testimonials = ['piano1', 'piano2']
-copy = """
-I’ve been privileged to be able to study with some truly excellent teachers, and
-I have a passion for sharing the knowledge that I’ve been given with others. I 
-have over a decade of teaching experience, and would love to talk to you about 
-starting lessons.
+# [[ music.items ]]
+# title = "Teaching: Piano"
+# image = "https://images.unsplash.com/photo-1513883049090-d0b7439799bf?w=1920"
+# rate  = "$70 / hour"
+# blurb = """Beginner to very advanced. Build technique and learn effective \
+# practice strategies."""
+# testimonials = ['piano1', 'piano2']
+# copy = """
+# I’ve been privileged to be able to study with some truly excellent teachers, and
+# I have a passion for sharing the knowledge that I’ve been given with others. I 
+# have over a decade of teaching experience, and would love to talk to you about 
+# starting lessons.
 
-The teacher-student relationship is the foundation for all learning, and I do 
-everything I can to build trust and create a safe environment for students. In 
-lessons with me, there are no silly questions or obvious answers — we all have 
-different strengths and backgrounds. I also do everything I can to be 
-accommodating and understanding; while I do have a studio policy, I do 
-understand that life happens, and sometimes things come up. Some weeks we can’t 
-practice as much as we want to, and sometimes we have to cancel lessons. That’s 
-ok.
+# The teacher-student relationship is the foundation for all learning, and I do 
+# everything I can to build trust and create a safe environment for students. In 
+# lessons with me, there are no silly questions or obvious answers — we all have 
+# different strengths and backgrounds. I also do everything I can to be 
+# accommodating and understanding; while I do have a studio policy, I do 
+# understand that life happens, and sometimes things come up. Some weeks we can’t 
+# practice as much as we want to, and sometimes we have to cancel lessons. That’s 
+# ok.
 
-My long-term goal in teaching is to make students independent. That’s why I take
-every opportunity to incorporate learning healthy technique and good practice
-strategies into lessons. 
+# My long-term goal in teaching is to make students independent. That’s why I take
+# every opportunity to incorporate learning healthy technique and good practice
+# strategies into lessons. 
 
-I always offer a free 30-minute consultation for new prospective students. This
-is an opportunity to get to know each other a little, for us both to see if it
-would be a good fit, and for me to formulate an idea of what your (or your
-child’s) interests and goals are.
-"""
+# I always offer a free 30-minute consultation for new prospective students. This
+# is an opportunity to get to know each other a little, for us both to see if it
+# would be a good fit, and for me to formulate an idea of what your (or your
+# child’s) interests and goals are.
+# """
 
-[[ music.items.buttons ]]
-title = "book a free consultation"
-type  = "primary"
-url   = "https://calendly.com/bradleyburgess/free-consultation"
-[[ music.items.buttons ]]
-title = "get in touch"
-type  = "secondary"
-url   = "/contact/"
+# [[ music.items.buttons ]]
+# title = "book a free consultation"
+# type  = "primary"
+# url   = "https://calendly.com/bradleyburgess/free-consultation"
+# [[ music.items.buttons ]]
+# title = "get in touch"
+# type  = "secondary"
+# url   = "/contact/"
 
-[[ music.items.quickinfo ]]
-title   = "Skill Levels"
-content = "Beginner to Advanced"
+# [[ music.items.quickinfo ]]
+# title   = "Skill Levels"
+# content = "Beginner to Advanced"
 
-[[ music.items.quickinfo ]]
-title   = "Lesson duration"
-content = "30 min, 45 min, or 60 min"
+# [[ music.items.quickinfo ]]
+# title   = "Lesson duration"
+# content = "30 min, 45 min, or 60 min"
 
-[[ music.items.quickinfo ]]
-title   = "Learning areas"
-content = """
-- Classical repertoire
-- Playing by ear
-- Pop
-- Technique
-- Practice strategies
-- Accompanying
-- Scales & chords
-"""
+# [[ music.items.quickinfo ]]
+# title   = "Learning areas"
+# content = """
+# - Classical repertoire
+# - Playing by ear
+# - Pop
+# - Technique
+# - Practice strategies
+# - Accompanying
+# - Scales & chords
+# """
 
 
 # teaching: organ ----------------------------------------

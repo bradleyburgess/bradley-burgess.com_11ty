@@ -1,26 +1,26 @@
 # PIANO TESTIMONIALS ======================================== #
 
-- id:       "piano1"
+- id:       "organ3"
   image:    "https://dl.dropboxusercontent.com/s/m1rf0mz5lln3v2x/toni.jpg?dl=0"
   author:   "Toni M."
-  subtitle: "Piano student"
+  subtitle: "Organ student"
   copy: >-
-    Bradley is an exceptional instructor. I have been playing the piano for
+    Bradley is an exceptional instructor. I have been playing the piano and organ for
     over 50 years and he has taught me practicing techniques that I have never
     used before. His knowledge, and ability to share it with the student, is
     excellent. He is a gifted musician himself and helps inspire me to always
     improve.
 
-- id:       "piano2"
-  image:    "https://dl.dropboxusercontent.com/s/g1scnyujesmdtr6/robin.jpg?dl=0"
-  author:   "Robin D."
-  subtitle: "Parent of a piano student"
-  copy: >-
-    Bradley has been a fantastic piano teacher for our son. He's experienced,
-    knowledgeable, and patient, as you would expect from any good teacher. But
-    he's also remarkably insightful and flexible as he molds his instruction to
-    our son's needs and strengths. Lessons are always really focused and at the
-    same time super upbeat and positive.
+# - id:       "piano2"
+#   image:    "https://dl.dropboxusercontent.com/s/g1scnyujesmdtr6/robin.jpg?dl=0"
+#   author:   "Robin D."
+#   subtitle: "Parent of a piano student"
+#   copy: >-
+#     Bradley has been a fantastic piano teacher for our son. He's experienced,
+#     knowledgeable, and patient, as you would expect from any good teacher. But
+#     he's also remarkably insightful and flexible as he molds his instruction to
+#     our son's needs and strengths. Lessons are always really focused and at the
+#     same time super upbeat and positive.
 
 # ORGAN TESTIMONIALS ======================================== #
 
